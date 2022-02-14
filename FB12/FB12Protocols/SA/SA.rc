@@ -1,0 +1,737 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\SA.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "#include ""SRGRes.rc""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SA.ico"
+IDR_SATYPE              ICON    DISCARDABLE     "res\\SADoc.ico"
+IDR_SAVIEWTYPE          ICON    DISCARDABLE     "res\\idr_saty.ico"
+IDR_KINETICSFRAME       ICON    DISCARDABLE     "res\\idr_main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_FB12                BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_MEASURE             BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_VIEWFRAME           BITMAP  MOVEABLE PURE   "res\\mainfram.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_FB12 TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FB12_DOOR
+END
+
+IDR_MEASURE TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_MEASURE_START
+    BUTTON      ID_MEASURE_STOP
+    SEPARATOR
+    BUTTON      ID_MEASURE_DELETE
+END
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EXCEL
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_MEASURE_GRID
+    BUTTON      ID_MEASURE_KINETICS
+    BUTTON      ID_KINETICS_ZOOMOUT
+    SEPARATOR
+    BUTTON      ID_WINDOW_TILE_HORZ
+    BUTTON      ID_WINDOW_TILE_VERT
+END
+
+IDR_VIEWFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EXCEL
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_EXCEL,               VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_MEASURE_KINETICS,    VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_MEASURE_GRID,        VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_KINETICS_ZOOMOUT,    VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_MEASURE_STOP,        VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Single Assay"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC_PROGICON,11,10,20,20,SS_NOTIFY
+    LTEXT           "Single Assay Protocol",IDC_STATIC_PROGSTR,40,10,170,10,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998 Softstep Corporation",IDC_STATIC,40,
+                    28,157,8
+    DEFPUSHBUTTON   "OK",IDOK,177,36,32,14,WS_GROUP
+    LTEXT           "Version 1.1",IDC_STATIC_VERSION,40,19,170,10,
+                    SS_NOPREFIX
+END
+
+IDD_SAVIEW DIALOGEX 0, 0, 396, 194
+STYLE WS_CHILD | WS_BORDER
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Custom1",IDC_SAGRID,"GXWND",WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,0,44,395,149
+    LTEXT           "Number of replicates:",IDC_STATIC_NUMREPS,204,9,73,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_NUMREPS,280,8,22,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "+",IDC_ADDREP,304,7,13,12
+    LTEXT           "Number of samples:",IDC_STATIC_NUMSAMPS,204,24,73,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_NUMSAMPS,280,23,22,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "+",IDC_ADDSAMP,304,24,13,12
+    CTEXT           "Background:",IDC_STATIC_BACKGROUND,324,10,44,8
+    EDITTEXT        IDC_EDIT_BACKGROUND,326,20,29,12,ES_AUTOHSCROLL
+    LTEXT           "RLU/s",IDC_STATIC_RLUs,358,23,26,8
+    LTEXT           "Date:",IDC_STATIC_DATE,3,10,19,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_DATE,24,9,56,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Delay time:",IDC_STATIC_DELAYTIME,81,10,64,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_DELAYTIME,147,8,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Time:",IDC_STATIC_TIME,5,25,17,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_TIME,24,24,56,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Measurement time:",IDC_STATIC_MEASTIME,81,25,64,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_MEASTIME,147,24,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_SAEDIT DIALOG DISCARDABLE  0, 0, 296, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Single Assay Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Measure and delay times",IDC_GB_TIMES,6,6,218,43
+    LTEXT           "Delay time:",IDC_STATIC_DELAY,15,19,48,8
+    EDITTEXT        IDC_EDIT_DELAY,15,28,56,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN_DELAY,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,71,29,10,12
+    LTEXT           "Measurement time:",IDC_STATIC_MEAS,142,18,69,8
+    EDITTEXT        IDC_EDIT_MEAS,142,28,56,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN_MEAS,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,198,28,11,12
+    GROUPBOX        "Start measurement by",IDC_GB_STARTOPTION,6,53,218,34,
+                    WS_GROUP
+    CONTROL         "Start button or space bar",IDC_RB_STARTBUTTON,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,15,65,96,8
+    LTEXT           "or enter key",IDC_STATIC,27,73,58,8,NOT WS_GROUP
+    CONTROL         "Door close",IDC_RB_DOORCLOSE,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,142,65,67,8
+    GROUPBOX        "Number of replicates and samples",IDC_GB_REPSAMPS,6,94,
+                    218,48
+    LTEXT           "Number of replicates:",IDC_STATIC_REPS,15,107,73,8
+    EDITTEXT        IDC_EDIT_REPS,15,120,56,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_REPS,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS,72,120,11,12
+    LTEXT           "Number of samples:",IDC_STATIC_SAMPS,142,108,73,8
+    EDITTEXT        IDC_EDIT_SAMPS,142,121,56,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_SAMPS,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS,198,121,11,12
+    CONTROL         "First sample is background",IDC_CB_BACKGROUND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,73,150,116,11
+    LTEXT           "Comments:",IDC_STATIC_COMMENTS,6,164,64,8
+    EDITTEXT        IDC_EDIT_COMMENTS,6,174,280,29,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+    PUSHBUTTON      "Advanced  Options...",IDC_ADVANCED,53,210,80,14
+    DEFPUSHBUTTON   "Save",IDC_SAVE,235,10,50,14
+    PUSHBUTTON      "Save As...",IDC_SAVEAS,235,29,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,235,56,50,14
+    PUSHBUTTON      "Excel (TM) Options...",IDC_EXCEL,143,210,80,14
+END
+
+IDD_SAADVANCED DIALOG DISCARDABLE  0, 0, 327, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Single Assay Advanced Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Grid options",IDC_GB_OPTIONS,14,7,240,32
+    CONTROL         "Flexible number of replicates",IDC_CB_FLEXREPS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,21,22,108,9
+    CONTROL         "Flexible number of samples",IDC_CB_FLEXSAMPS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,149,22,99,9
+    GROUPBOX        "Measurement entry order",IDC_GB_ENTRYORDER,14,48,240,32,
+                    WS_GROUP
+    CONTROL         "Across",IDC_RB_ROWORDER,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,21,64,67,8
+    CONTROL         "Down",IDC_RB_COLORDER,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,149,64,67,8
+    GROUPBOX        "Pre-defined sample names",IDC_GB_SAMPTITLES,14,90,300,
+                    100
+    PUSHBUTTON      "Delete",IDC_DELETE,23,108,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR,23,134,50,14
+    PUSHBUTTON      "Import",IDC_IMPORT,23,160,50,14
+    CONTROL         "Custom1",IDC_EDGRID,"GXWND",WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,82,106,220,69
+    LTEXT           "Press Tab or Enter on last line to add a sample",
+                    IDC_STATIC,82,178,176,8
+    DEFPUSHBUTTON   "OK",IDOK,265,10,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,265,33,50,14
+END
+
+IDD_PPSDIALOG DIALOG DISCARDABLE  0, 0, 196, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save protocol"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "New protocol:",PPS_IDC_STATIC_PROTOCOL,7,85,121,8
+    EDITTEXT        PPS_IDC_EDIT_PROTOCOL,7,94,121,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Save",IDOK,139,85,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,139,102,50,14
+    LTEXT           "Current protocols:",PPS_IDC_STATIC_PROTOCOLS,7,7,121,8
+    LISTBOX         PPS_IDC_LIST_PROTOCOLS,7,16,182,62,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EXCELOPTIONS DIALOG DISCARDABLE  0, 0, 294, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Single Assay Excel (TM) Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Auto-send to Excel (TM) at measurement completion",
+                    IDC_CHECK_AUTOSEND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,7,174,8
+    LTEXT           "*Workbook:",IDC_STATIC,7,23,38,10
+    EDITTEXT        IDC_EDIT_WORKBOOK,51,21,119,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Browse...",IDC_BROWSE,173,21,50,12
+    LTEXT           "*Worksheet:",IDC_STATIC,7,41,40,8
+    EDITTEXT        IDC_EDIT_WORKSHEET,51,38,119,12,ES_AUTOHSCROLL
+    LTEXT           "*At cell:",IDC_STATIC,8,59,42,8
+    LTEXT           "Excel (TM) macro:",IDC_STATIC,7,76,42,8
+    EDITTEXT        IDC_EDIT_MACRO,51,74,119,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,237,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,237,24,50,14
+    COMBOBOX        IDC_COMBO_COL,51,56,58,64,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ROW,113,56,58,12,ES_AUTOHSCROLL
+    LTEXT           "* these features only available with Excel (TM) 97",
+                    IDC_STATIC,188,70,90,19
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,0
+ PRODUCTVERSION 1,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "CompanyName", "Softstep Corporation\0"
+            VALUE "FileDescription", "SA\0"
+            VALUE "FileVersion", "1, 1, 0, 0\0"
+            VALUE "InternalName", "SA\0"
+            VALUE "LegalCopyright", "Copyright © 1998\0"
+            VALUE "OriginalFilename", "SA.exe\0"
+            VALUE "ProductName", "Softstep Corporation SA\0"
+            VALUE "ProductVersion", "1, 1, 0, 0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SAVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 389
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+        HORZGUIDE, 55
+    END
+
+    IDD_SAEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 289
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+
+    IDD_SAADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_PPSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_EXCELOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Dual Assay...",        ID_APP_ABOUT
+    END
+END
+
+IDR_SAVIEWTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "Save As &Text...",            ID_FILE_SAVE_AS_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "Send To &Excel (TM)\tCtrl+E", ID_EXCEL
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Single Assay...",      ID_APP_ABOUT
+    END
+END
+
+IDR_SATYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Save As &Text...",            ID_FILE_SAVE_AS_TEXT
+        MENUITEM "Save &Kinetics As Text...",   ID_FILE_SAVE_KINETICS_AS_TEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "Send To &Excel (TM)\tCtrl+E", ID_EXCEL
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Measure Bar",                ID_VIEW_RUNBAR
+    END
+    POPUP "&Measure"
+    BEGIN
+        MENUITEM "&Start Measurement\tSpace or Enter", ID_MEASURE_START
+        MENUITEM "S&top Measurement\tEsc",      ID_MEASURE_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&Delete Last Measurement\tDel", ID_MEASURE_DELETE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontal",            ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertical",              ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Show Table\tCtrl+T",         ID_MEASURE_GRID
+        MENUITEM "Show &Kinetics Graph\tCtrl+K", ID_MEASURE_KINETICS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Single Assay...",      ID_APP_ABOUT
+    END
+END
+
+IDR_CONTEXT MENU DISCARDABLE 
+BEGIN
+    MENUITEM "&Copy",                       ID_EDIT_COPY
+    MENUITEM "Set &background to",          ID_CONTEXT_BACKGROUND
+END
+
+IDR_SAKINETICSTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Save &Kinetics As Text...",   ID_FILE_SAVE_KINETICS_AS_TEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Measure Bar",                ID_VIEW_RUNBAR
+    END
+    POPUP "&Measure"
+    BEGIN
+        MENUITEM "&Start Measurement\tSpace or Enter", ID_MEASURE_START
+        MENUITEM "S&top Measurement\tEsc",      ID_MEASURE_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "&Delete Last Measurement\tDel", ID_MEASURE_DELETE
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontal",            ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertical",              ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Show Table\tCtrl+T",         ID_MEASURE_GRID
+        MENUITEM "Show &Kinetics Graph\tCtrl+K", ID_MEASURE_KINETICS
+        MENUITEM "&Unzoom\tCtrl+U",             ID_KINETICS_ZOOMOUT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Single Assay...",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Single Assay"
+    IDR_SATYPE              "\nSA_\n\nMeasurement Data (*.mds)\n.mds\nMeasurement.Data\nMeasurement Data"
+    IDR_SAVIEWTYPE          "\nSA_\n\nMeasurement Data (*.mds)\n.mds\nMeasurement.Data\nMeasurement Data"
+    IDS_FB12_CONTROL_FAILED "Cannot create FB12 Control instance."
+    IDS_FB12_EVENTS_FAILED  "Cannot create FB12 events object."
+    IDS_FB12_ADVISE_FAILED  "Cannot create advise link with FB12 OLE/COM object."
+    IDS_FB12_SERIAL_FAILED  "Unable to start FB12 serial communications."
+    IDS_FB12_TIMEOUT        "The instrument is not sending data.\n\nPlease make sure the instrument is set to\nPC-Operation mode, check the serial cables,\nand check the serial parameters."
+    IDS_FB12_ERROR_INIT     "An FB12 serial initialization error occurred.\n\nOpen and close the door to retake measurement."
+    IDS_FB12_ERROR_GENERAL  "An FB12 general serial error occurred.\n\nOpen and close the door to retake measurement."
+    IDS_FB12_ERROR_CHECKSUM "An FB12 serial checksum error occurred.\n\nOpen and close the door to retake measurement."
+    IDS_MEASUREMESSAGE      "Measuring..."
+    IDS_FB12_DOOROPENED     "The instrument door was opened during a measurement.\n\nClose the door to retake the measurement."
+    IDS_DELAYMESSAGE        "Waiting for delay time to pass..."
+    IDS_OUTOFTIME           "This is an evaluation copy which has expired.\n\nPlease contact Softstep Corporation to purchase this software.\n\n7801 N. Lamar, Suite A-139\nAustin, TX  78752\nwww.softstep.com\n512-323-2760"
+    IDS_OLE_INIT_FAILED2    "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Single Assay"
+    AFX_IDS_IDLEMESSAGE     "Insert a tube in luminometer and close door."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles horiztonally\nTile Windows Horizontally"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles vertically\nTile Windows Vertically"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FB12_DOORSTATUS      "Door Closed"
+    ID_FB12_TIMER           "M 999m 99.9s"
+    ID_FB12_RX              "RX"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VIEW_IDLEMESSAGE    "View or export data."
+    IDR_SAKINETICSTYPE      "\nData\n\nMeasurement Data (*.mds)\n.mds\nMeasurement.Data\nMeasurement Data"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_RUNBAR          "Show or hide the measure toolbar\nToggle Measure Bar"
+    ID_FILE_SAVEASTEXT      "Save the active document as tab-delimited text with a new name\nSave As Text"
+    ID_FILE_SAVE_AS_TEXT    "Save the measured data to a tab-delimited text file\nSave As Text"
+    ID_EXCEL                "Send measured data to Excel (TM)\nSend To Excel (TM)"
+    ID_FB12_DOOR            "Open and close the simulated FB12 door.\nOpen/Close FB12 door"
+    ID_MEASURE_START        "Start taking a measurement\nStart Measurement"
+    ID_MEASURE_STOP         "Halt a measurement in progess\nStop Measurement"
+    ID_MEASURE_DELETE       "Delete the last measurement\nDelete Last Measurement"
+    ID_MEASURE_KINETICS     "Show the kinetics graph window\nShow Kinetics Graph"
+    ID_FILE_SAVE_KINETICS_AS_TEXT 
+                            "Save kinetics to a text file\nSave Kinetics As Text"
+    ID_MEASURE_GRID         "Show the table window\nShow Table"
+    ID_CONTEXT_BACKGROUND   "Show the table window\nShow Table"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_KINETICS_ZOOMOUT     "Unzoom the kinetics graph\nUnzoom Kinetics Graph"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\SA.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+#include "SRGRes.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

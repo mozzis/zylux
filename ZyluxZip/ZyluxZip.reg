@@ -1,0 +1,13 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\ZyluxZip.Application = ZyluxZip Application
+HKEY_CLASSES_ROOT\ZyluxZip.Application\CLSID = {B0FBB7DF-CC6F-4D82-89DB-9008D0AE6BED}
+
+HKEY_CLASSES_ROOT\CLSID\{B0FBB7DF-CC6F-4D82-89DB-9008D0AE6BED} = ZyluxZip Application
+HKEY_CLASSES_ROOT\CLSID\{B0FBB7DF-CC6F-4D82-89DB-9008D0AE6BED}\ProgId = ZyluxZip.Application
+HKEY_CLASSES_ROOT\CLSID\{B0FBB7DF-CC6F-4D82-89DB-9008D0AE6BED}\LocalServer32 = ZYLUXZIP.EXE

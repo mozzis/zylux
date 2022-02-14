@@ -1,0 +1,10 @@
+release\*.exe
+*.cpp
+*.h
+*.rc*
+res\*.rc*
+res\*.bmp
+res\*.ico
+*.ds*
+pkSRC.bat
+files.lst

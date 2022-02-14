@@ -1,0 +1,3 @@
+This program will decompress and install the
+
+Zylux Capture Utility, version 2.1.6.

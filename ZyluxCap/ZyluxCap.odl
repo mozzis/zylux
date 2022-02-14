@@ -1,0 +1,135 @@
+/////////////////////////////////////////////////////////////////////////////
+// Copyright (C) 1998 Mayn Idea Software
+// All rights reserved
+/////////////////////////////////////////////////////////////////////////////
+// ZyluxCap.odl : type library source for ZyluxCap.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (ZyluxCap.tlb).
+
+
+// Type library block for ZyluxCap
+///////////////////////////////////////////////////////////////////////////
+[ 
+  uuid(F0CB6024-7876-11D2-88A4-00104BF194E2), 
+  version(1.0),
+  helpstring("Zylux Capture Application"),
+]
+library ZyluxCap
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+  typedef 
+    [
+    uuid(B425EFA9-CBCD-4f9e-9CA2-EF814784D5DF),
+    helpstring("Category codes supplied by the IZyluxNotify->Notify function")
+    ] 
+  enum ZYNOTIFYCAT { ZYNOTIFY_APP, ZYNOTIFY_CAPTURE } ZYNOTIFYCAT;
+
+  typedef 
+    [
+    uuid(B425EFAA-CBCD-4f9e-9CA2-EF814784D5DF),
+    helpstring("Reason codes supplied by the IZyluxNotify->Notify function")
+    ] 
+  enum ZYNOTIFYCODE { ZYCODE_COMPLETE, ZYCODE_CANCELED } ZYNOTIFYCODE;
+
+	//  Primary dispatch interface for CZyluxCapApp
+  ///////////////////////////////////////////////////////////////////////////
+	[ 
+  uuid(F0CB6025-7876-11D2-88A4-00104BF194E2),
+  helpstring("IZyluxCap interface (supports IDispatch only)"),
+  ]
+	dispinterface IZyluxCap
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CZyluxCapDlgAutoProxy)
+			[id(1)] long Baud;
+			[id(2)] short Port;
+			[id(3)] short FlowCtrl;
+			[id(4)] short DBits;
+			[id(5)] short Parity;
+			[id(6)] short StopBits;
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CZyluxCapDlgAutoProxy)
+			[id(7)] SCODE Advise(IUnknown* pNotifier);
+			[id(8)] SCODE UnAdvise(IUnknown* pNotifier);
+			[id(9)] void SetWindowPos(long left, long top, long right, long bottom);
+			[id(10)] void CenterOnRect(long left, long top, long right, long bottom);
+			[id(11)] void Quit();
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CZyluxCapApp
+  ///////////////////////////////////////////////////////////////////////////
+	[ 
+  uuid(F0CB6023-7876-11D2-88A4-00104BF194E2),
+  helpstring("ZyluxCap coclass (supports IDispatch only)"),
+  ]
+	coclass ZyluxCap
+	{
+		[default] dispinterface IZyluxCap;
+	};
+
+	//  Interface def for IZyluxNotify
+  ///////////////////////////////////////////////////////////////////////////
+  [
+    object,
+    uuid(32FD1680-348C-41cf-BE53-B0148CAEC0BA),
+    dual,
+    helpstring("IZyluxNotify Interface"),
+    pointer_default(unique)
+  ]
+  interface IZyluxNotify : IDispatch
+  {
+    [id(1), helpstring("Notify client app of event")]
+      HRESULT Notify([in]long lCategory, [in]long lReason, [in]IUnknown *pUnk);
+  };
+	//  (No class information; implementation done in client programs
+  ///////////////////////////////////////////////////////////////////////////
+
+	//  Interface def for IZSerialInfo
+  ///////////////////////////////////////////////////////////////////////////
+//  [
+//    object,
+//    uuid(32FD1682-348C-41cf-BE53-B0148CAEC0BA),
+//    dual,
+//    helpstring("IZSerialInfo Interface"),
+//    pointer_default(unique)
+//  ]
+//  interface IZSerialInfo : IDispatch
+//  {
+//		[propget, id(1), helpstring("StopBits")] HRESULT StopBits([out, retval] short *pVal);
+//		[propput, id(1), helpstring("StopBits")] HRESULT StopBits([in] short newVal);
+//		[propget, id(2), helpstring("DataBits")] HRESULT DataBits([out, retval] short *pVal);
+//		[propput, id(2), helpstring("DataBits")] HRESULT DataBits([in] short newVal);
+//		[propget, id(3), helpstring("BaudRate")] HRESULT BaudRate([out, retval] long *pVal);
+//		[propput, id(3), helpstring("BaudRate")] HRESULT BaudRate([in] long newVal);
+//		[propget, id(4), helpstring("FlowCtrl")] HRESULT FlowCtrl([out, retval] short *pVal);
+//		[propput, id(4), helpstring("FlowCtrl")] HRESULT FlowCtrl([in] short newVal);
+//		[propget, id(5), helpstring("Parity")]   HRESULT Parity  ([out, retval] short *pVal);
+//		[propput, id(5), helpstring("Parity")]   HRESULT Parity  ([in] short newVal);
+//		[propget, id(6), helpstring("PortNum")]  HRESULT PortNum ([out, retval] short *pVal);
+//		[propput, id(6), helpstring("PortNum")]  HRESULT PortNum ([in] short newVal);
+//  };
+//
+//  ///////////////////////////////////////////////////////////////////////////
+//  [
+//    uuid(32FD1683-348C-41cf-BE53-B0148CAEC0BA),
+//    helpstring("ZSerialInfo Class")
+//  ]
+//  coclass ZSerialInfo
+//  {
+//    [default] interface IZSerialInfo;
+//  };
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

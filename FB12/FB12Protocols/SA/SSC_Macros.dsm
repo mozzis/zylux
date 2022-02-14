@@ -1,0 +1,104 @@
+'------------------------------------------------------------------------------
+'FILE DESCRIPTION: Macros for use by Softstep.
+'------------------------------------------------------------------------------
+Const proj_dir= "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\"
+
+Sub BumpBuildNumber()
+'DESCRIPTION: A description was not provided.
+
+	'TODO: Put macro code here
+
+	On Error Resume Next
+	dim doc
+	dim is_open
+	dim is_text
+	dim proj_name
+
+	is_open = false
+	is_text = false
+
+	proj_name = Application.ActiveProject.Name
+	if (proj_name = "") then
+		msgbox "No Project loaded"
+		exit sub
+	end if
+
+	For Each doc in Application.Documents
+		' Access myDocument here.
+		' For example:
+		if (doc.Name = proj_name & ".rc") then
+			is_open = True
+			exit for
+		end if
+	Next
+	if (is_open = True) then
+		if (doc.Type <> "Text") then
+			if (doc.Saved) then
+				doc.Close dsSaveChangesNo
+			else
+				doc.Close dsSaveChangesYes
+			end if
+		else
+			is_text = true
+		end if
+	end if
+
+	Err = 0
+	if ((is_open) and (is_text)) then
+		' do nothing - Text document of .rc file already open
+	else
+		' Open the .rc as a text file.
+		Application.Documents.Open proj_dir & proj_name & "\" & proj_name & ".rc", _
+			"Text",False
+	end if
+	if (Err = 0) then
+		set doc = Documents(proj_name & ".rc")
+
+		doc.Selection.StartOfDocument
+		if (doc.Selection.FindText("SpecialBuild",dsMatchCase + dsMatchWord) = True) then
+		    if (doc.Selection.FindText("\0")) then
+
+				doc.Selection.WordLeft dsExtend, 3
+				if (IsNumeric(doc.Selection.Text)) then
+					dim buildnum
+					buildnum = CLng(doc.Selection.Text)
+					buildnum = buildnum + 1
+					doc.Selection.Text = CStr(buildnum)
+				else
+					msgbox "Invalid build number"
+				end if
+			else
+				msgbox "not found"
+			end if
+		else
+			msgbox "SpecialBuild not found"
+		end if
+	    if ((is_open) and (is_text)) then
+			doc.Save
+		elseif (is_open) then
+			doc.Close dsSaveChangesYes
+			Err = 0
+			Application.Documents.Open proj_dir & proj_name & "\" & proj_name & ".rc",,False
+			if (Err <> 0) then
+				msgbox "Error opening file"
+			end if
+		else
+			doc.Close dsSaveChangesYes
+		end if
+
+	else
+		  msgbox "Error opening file"
+	end if
+
+
+End Sub
+
+
+Sub test()
+'DESCRIPTION: A description was not provided.
+
+
+'Begin Recording
+	ActiveWindow.Close dsSaveChangesPrompt
+'End Recording
+End Sub

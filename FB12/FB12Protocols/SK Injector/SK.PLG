@@ -1,0 +1,188 @@
+--------------------Configuration: SK - Win32 Release--------------------
+Begining build with project "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\SK Injector\SK.DSP", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MD /W3 /GX /O2 /I "..\Protocol" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /Fp"T:\tmp\Fb12\SK Injector\Release/SK.pch" /Yu"stdafx.h" /Fo"T:\tmp\Fb12\SK Injector\Release/" /Fd"T:\tmp\Fb12\SK Injector\Release/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"T:\tmp\Fb12\SK Injector\Release/SK.res" /d "NDEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"Release/SK.bsc" "
+			"COFF Linker for 80x86" with flags "Winmm.lib ProtocolR.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SK Injector.pdb" /machine:I386 /out:"Release/SK Injector.exe" /libpath:"..\Protocol\lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x409 /fo"T:\tmp\Fb12\SK Injector\Release/SK.res" /d "NDEBUG" /d "_AFXDLL" "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\SK Injector\SK.rc"" 
+Creating temp file "C:\WINDOWS\TEMP\RSP40C3.TMP" with contents <Winmm.lib ProtocolR.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SK Injector.pdb" /machine:I386 /out:"Release/SK Injector.exe" /libpath:"..\Protocol\lib" 
+"T:\tmp\Fb12\SK Injector\Release\ChartOptView.obj"
+"T:\tmp\Fb12\SK Injector\Release\ChartView.obj"
+"T:\tmp\Fb12\SK Injector\Release\ExcelOptions.obj"
+"T:\tmp\Fb12\SK Injector\Release\InjectorOptions.obj"
+"T:\tmp\Fb12\SK Injector\Release\InjectorParams.obj"
+"T:\tmp\Fb12\SK Injector\Release\InjectorToolBar.obj"
+"T:\tmp\Fb12\SK Injector\Release\InjectorWarning.obj"
+"T:\tmp\Fb12\SK Injector\Release\MainFrm.obj"
+"T:\tmp\Fb12\SK Injector\Release\RepInfoList.obj"
+"T:\tmp\Fb12\SK Injector\Release\Sample.obj"
+"T:\tmp\Fb12\SK Injector\Release\SK.obj"
+"T:\tmp\Fb12\SK Injector\Release\SKAdvanced.obj"
+"T:\tmp\Fb12\SK Injector\Release\SKDoc.obj"
+"T:\tmp\Fb12\SK Injector\Release\SKEditDlg.obj"
+"T:\tmp\Fb12\SK Injector\Release\SKGraphFrame.obj"
+"T:\tmp\Fb12\SK Injector\Release\SKGridWnd.obj"
+"T:\tmp\Fb12\SK Injector\Release\SKHint.obj"
+"T:\tmp\Fb12\SK Injector\Release\SKOptions.obj"
+"T:\tmp\Fb12\SK Injector\Release\SKPPS.obj"
+"T:\tmp\Fb12\SK Injector\Release\SKView.obj"
+"T:\tmp\Fb12\SK Injector\Release\StdAfx.obj"
+"T:\tmp\Fb12\SK Injector\Release\XP3KControl.obj"
+"T:\tmp\Fb12\SK Injector\Release\XP3KDev.obj"
+"T:\tmp\Fb12\SK Injector\Release\XP3KTarget.obj"
+"T:\tmp\Fb12\SK Injector\Release\SK.res">
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP40C3.TMP" 
+Compiling resources...
+Linking...
+
+
+
+SK Injector.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: SK - Win32 Debug--------------------
+Begining build with project "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\SK Injector\SK.DSP", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\Protocol" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /Fp"T:\tmp\Fb12\SK Injector\Debug/SK.pch" /Yu"stdafx.h" /Fo"T:\tmp\Fb12\SK Injector\Debug/" /Fd"T:\tmp\Fb12\SK Injector\Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"T:\tmp\Fb12\SK Injector\Debug/SK.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/SK.bsc" "
+			"COFF Linker for 80x86" with flags "Winmm.lib ProtocolD.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/SK Injector.pdb" /debug /machine:I386 /out:"Debug/SK Injector.exe" /pdbtype:sept /libpath:"..\Protocol\lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x409 /fo"T:\tmp\Fb12\SK Injector\Debug/SK.res" /d "_DEBUG" /d "_AFXDLL" "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\SK Injector\SK.rc"" 
+Creating temp file "C:\WINDOWS\TEMP\RSP4253.TMP" with contents <Winmm.lib ProtocolD.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/SK Injector.pdb" /debug /machine:I386 /out:"Debug/SK Injector.exe" /pdbtype:sept /libpath:"..\Protocol\lib" 
+"T:\tmp\Fb12\SK Injector\Debug\ChartOptView.obj"
+"T:\tmp\Fb12\SK Injector\Debug\ChartView.obj"
+"T:\tmp\Fb12\SK Injector\Debug\ExcelOptions.obj"
+"T:\tmp\Fb12\SK Injector\Debug\InjectorOptions.obj"
+"T:\tmp\Fb12\SK Injector\Debug\InjectorParams.obj"
+"T:\tmp\Fb12\SK Injector\Debug\InjectorToolBar.obj"
+"T:\tmp\Fb12\SK Injector\Debug\InjectorWarning.obj"
+"T:\tmp\Fb12\SK Injector\Debug\MainFrm.obj"
+"T:\tmp\Fb12\SK Injector\Debug\RepInfoList.obj"
+"T:\tmp\Fb12\SK Injector\Debug\Sample.obj"
+"T:\tmp\Fb12\SK Injector\Debug\SK.obj"
+"T:\tmp\Fb12\SK Injector\Debug\SKAdvanced.obj"
+"T:\tmp\Fb12\SK Injector\Debug\SKDoc.obj"
+"T:\tmp\Fb12\SK Injector\Debug\SKEditDlg.obj"
+"T:\tmp\Fb12\SK Injector\Debug\SKGraphFrame.obj"
+"T:\tmp\Fb12\SK Injector\Debug\SKGridWnd.obj"
+"T:\tmp\Fb12\SK Injector\Debug\SKHint.obj"
+"T:\tmp\Fb12\SK Injector\Debug\SKOptions.obj"
+"T:\tmp\Fb12\SK Injector\Debug\SKPPS.obj"
+"T:\tmp\Fb12\SK Injector\Debug\SKView.obj"
+"T:\tmp\Fb12\SK Injector\Debug\StdAfx.obj"
+"T:\tmp\Fb12\SK Injector\Debug\XP3KControl.obj"
+"T:\tmp\Fb12\SK Injector\Debug\XP3KDev.obj"
+"T:\tmp\Fb12\SK Injector\Debug\XP3KTarget.obj"
+"T:\tmp\Fb12\SK Injector\Debug\SK.res">
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP4253.TMP" 
+Compiling resources...
+Linking...
+
+
+
+SK Injector.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: SK - Win32 Debug Simulate--------------------
+Begining build with project "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\SK Injector\SK.DSP", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\Protocol" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /D "FB12_SIMULATE" /Fp"T:\tmp\Fb12\SK Injector\DebugS/SK.pch" /Yu"stdafx.h" /Fo"T:\tmp\Fb12\SK Injector\DebugS/" /Fd"T:\tmp\Fb12\SK Injector\DebugS/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"T:\tmp\Fb12\SK Injector\DebugS/SK.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"DebugS/SK.bsc" "
+			"COFF Linker for 80x86" with flags "Winmm.lib ProtocolDS.lib /nologo /subsystem:windows /incremental:yes /pdb:"DebugS/SK Injector.pdb" /debug /machine:I386 /out:"DebugS/SK Injector.exe" /pdbtype:sept /libpath:"..\Protocol\lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x409 /fo"T:\tmp\Fb12\SK Injector\DebugS/SK.res" /d "_DEBUG" /d "_AFXDLL" "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\SK Injector\SK.rc"" 
+Creating temp file "C:\WINDOWS\TEMP\RSP4354.TMP" with contents <Winmm.lib ProtocolDS.lib /nologo /subsystem:windows /incremental:yes /pdb:"DebugS/SK Injector.pdb" /debug /machine:I386 /out:"DebugS/SK Injector.exe" /pdbtype:sept /libpath:"..\Protocol\lib" 
+"T:\tmp\Fb12\SK Injector\DebugS\ChartOptView.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\ChartView.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\ExcelOptions.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\InjectorOptions.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\InjectorParams.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\InjectorToolBar.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\InjectorWarning.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\MainFrm.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\RepInfoList.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\Sample.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\SK.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\SKAdvanced.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\SKDoc.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\SKEditDlg.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\SKGraphFrame.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\SKGridWnd.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\SKHint.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\SKOptions.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\SKPPS.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\SKView.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\StdAfx.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\XP3KControl.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\XP3KDev.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\XP3KTarget.obj"
+"T:\tmp\Fb12\SK Injector\DebugS\SK.res">
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP4354.TMP" 
+Compiling resources...
+Linking...
+
+
+
+SK Injector.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: SK - Win32 Release Simulate--------------------
+Begining build with project "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\SK Injector\SK.DSP", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MD /W3 /GX /O2 /I "..\Protocol" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /D "FB12_SIMULATE" /Fp"T:\tmp\Fb12\SK Injector\ReleaseS/SK.pch" /Yu"stdafx.h" /Fo"T:\tmp\Fb12\SK Injector\ReleaseS/" /Fd"T:\tmp\Fb12\SK Injector\ReleaseS/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"T:\tmp\Fb12\SK Injector\ReleaseS/SK.res" /d "NDEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"ReleaseS/SK.bsc" "
+			"COFF Linker for 80x86" with flags "Winmm.lib ProtocolRS.lib /nologo /subsystem:windows /incremental:no /pdb:"ReleaseS/SK Injector.pdb" /machine:I386 /out:"ReleaseS/SK Injector.exe" /libpath:"..\Protocol\lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x409 /fo"T:\tmp\Fb12\SK Injector\ReleaseS/SK.res" /d "NDEBUG" /d "_AFXDLL" "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\SK Injector\SK.rc"" 
+Creating temp file "C:\WINDOWS\TEMP\RSP5081.TMP" with contents <Winmm.lib ProtocolRS.lib /nologo /subsystem:windows /incremental:no /pdb:"ReleaseS/SK Injector.pdb" /machine:I386 /out:"ReleaseS/SK Injector.exe" /libpath:"..\Protocol\lib" 
+"T:\tmp\Fb12\SK Injector\ReleaseS\ChartOptView.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\ChartView.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\ExcelOptions.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\InjectorOptions.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\InjectorParams.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\InjectorToolBar.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\InjectorWarning.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\MainFrm.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\RepInfoList.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\Sample.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\SK.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\SKAdvanced.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\SKDoc.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\SKEditDlg.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\SKGraphFrame.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\SKGridWnd.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\SKHint.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\SKOptions.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\SKPPS.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\SKView.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\StdAfx.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\XP3KControl.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\XP3KDev.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\XP3KTarget.obj"
+"T:\tmp\Fb12\SK Injector\ReleaseS\SK.res">
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP5081.TMP" 
+Compiling resources...
+Linking...
+
+
+
+SK Injector.exe - 0 error(s), 0 warning(s)

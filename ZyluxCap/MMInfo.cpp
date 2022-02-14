@@ -1,0 +1,27 @@
+// MMInfo.cpp: implementation of the CMMInfo class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "ZyluxCap.h"
+#include "MMInfo.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CMMInfo::CMMInfo()
+{
+
+}
+
+CMMInfo::~CMMInfo()
+{
+
+}

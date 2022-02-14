@@ -1,0 +1,522 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\QM.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\r\n"
+    "#include ""SRGres.rc""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\QM.ico"
+IDR_QMTYPE              ICON    DISCARDABLE     "res\\QMDoc.ico"
+IDR_QMVIEWTYPE          ICON    DISCARDABLE     "res\\idr_qmty.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_FB12                BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_VIEWFRAME           BITMAP  MOVEABLE PURE   "res\\mainfram.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EXCEL
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_FB12 TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FB12_DOOR
+END
+
+IDR_VIEWFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EXCEL
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Quick Measurement...", ID_APP_ABOUT
+    END
+END
+
+IDR_QMTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Save As &Text...",            ID_FILE_SAVE_AS_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "Send To &Excel (TM)\tCtrl+E",      ID_EXCEL
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Quick Measurement...", ID_APP_ABOUT
+    END
+END
+
+IDR_QMVIEWTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "Save As &Text...",            ID_FILE_SAVE_AS_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "Send To &Excel (TM)\tCtrl+E",      ID_EXCEL
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Quick Measurement...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_EXCEL,               VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Quick Measurement"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC_PROGICON,11,10,20,20,SS_NOTIFY
+    LTEXT           "Quick Measurement Protocol",IDC_STATIC_PROGSTR,40,10,
+                    171,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998 Softstep Corporation",IDC_STATIC,40,
+                    28,163,8
+    DEFPUSHBUTTON   "OK",IDOK,179,37,32,14,WS_GROUP
+    LTEXT           "Version 1.1",IDC_STATIC_VERSION,40,18,171,8,SS_NOPREFIX
+END
+
+IDD_QMVIEW DIALOGEX 0, 0, 298, 195
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Custom1",IDC_QMGRID,"GXWND",WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,0,38,298,157
+    LTEXT           "Date:",IDC_STATIC_DATE,2,8,19,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_DATE,22,7,56,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Delay time:",IDC_STATIC_DELAYTIME,85,8,64,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_DELAYTIME,151,7,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Time:",IDC_STATIC_TIME,0,23,21,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_TIME,22,22,56,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Measurement time:",IDC_STATIC_MEASTIME,85,23,64,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_MEASTIME,151,22,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_QMEDIT DIALOG DISCARDABLE  0, 0, 187, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Quick Measurement Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Delay time:",IDC_STATIC_DELAY,14,8,48,8
+    EDITTEXT        IDC_EDIT_DELAY,14,20,56,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN_DELAY,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,70,20,10,12
+    LTEXT           "Measurement time:",IDC_STATIC_MEAS,14,43,69,8
+    EDITTEXT        IDC_EDIT_MEAS,14,54,56,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN_MEAS,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,70,54,10,12
+    DEFPUSHBUTTON   "Save",IDC_SAVE,130,19,50,14
+    PUSHBUTTON      "Save As...",IDC_SAVEAS,130,61,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,46,50,14
+END
+
+IDD_PPSDIALOG DIALOG DISCARDABLE  0, 0, 196, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save protocol"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "New protocol:",PPS_IDC_STATIC_PROTOCOL,7,85,121,8
+    EDITTEXT        PPS_IDC_EDIT_PROTOCOL,7,94,121,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Save",IDOK,139,85,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,139,102,50,14
+    LTEXT           "Current protocols:",PPS_IDC_STATIC_PROTOCOLS,7,7,121,8
+    LISTBOX         PPS_IDC_LIST_PROTOCOLS,7,16,182,62,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,0
+ PRODUCTVERSION 1,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Softstep Corporation\0"
+            VALUE "FileDescription", "Quick Measurement Protocol\0"
+            VALUE "FileVersion", "1, 1, 0, 0\0"
+            VALUE "InternalName", "QM\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "OriginalFilename", "QM.EXE\0"
+            VALUE "ProductName", "Quick Measurement Protocol\0"
+            VALUE "ProductVersion", "1, 1, 0, 0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_QMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_QMEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_PPSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Quick Measurement"
+    IDR_QMTYPE              "\nQM_\n\nMeasurement Data (*.mds)\n.mds\nMeasurement.Data\nMeasurement Data"
+    IDR_QMVIEWTYPE          "\nQM_\n\nMeasurement Data (*.mds)\n.mds\nMeasurement.Data\nMeasurement Data"
+    IDS_FB12_CONTROL_FAILED "Cannot create FB12 Control instance."
+    IDS_FB12_EVENTS_FAILED  "Cannot create FB12 events object."
+    IDS_FB12_ADVISE_FAILED  "Cannot create advise link with FB12 OLE/COM object."
+    IDS_FB12_SERIAL_FAILED  "Unable to start FB12 serial communications."
+    IDS_FB12_TIMEOUT        "The instrument is not sending data.\n\nPlease make sure the instrument is set to\nPC-Operation mode, check the serial cables,\nand check the serial parameters."
+    IDS_FB12_ERROR_INIT     "An FB12 serial initialization error occurred.\n\nOpen and close the door to retake measurement."
+    IDS_FB12_ERROR_GENERAL  "An FB12 general serial error occurred.\n\nOpen and close the door to retake measurement."
+    IDS_FB12_ERROR_CHECKSUM "An FB12 serial checksum error occurred.\n\nOpen and close the door to retake measurement."
+    IDS_MEASUREMESSAGE      "Measuring..."
+    IDS_FB12_DOOROPENED     "The instrument door was opened during a measurement.\n\nClose the door to retake the measurement."
+    IDS_DELAYMESSAGE        "Waiting for delay time to pass..."
+    IDS_OUTOFTIME           "This is an evaluation copy which has expired.\n\nPlease contact Softstep Corporation to purchase this software.\n\n7801 N. Lamar, Suite A-139\nAustin, TX  78752\nwww.softstep.com\n512-323-2760"
+    IDS_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Quick Measurement"
+    AFX_IDS_IDLEMESSAGE     "Insert a tube in luminometer and close door."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the measured data\nSave"
+    ID_FILE_SAVE_AS         "Save the measured data with a new name\nSave As"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_BUTTON_START        "Start measuring\nStart measuring"
+    IDC_BUTTON_STOP         "Stop measuring\nStop measuring"
+    IDC_CHECK_KINETICS      "Show kinetics\nShow kinetics"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_RUNBAR          "Show or hide the measure toolbar\nToggle Measure Bar"
+    ID_FILE_SAVEASTEXT      "Save the active document as tab-delimited text with a new name\nSave As Text"
+    ID_FILE_SAVE_AS_TEXT    "Save the measured data to a tab-delimited text file\nSave As Text"
+    ID_EXCEL                "Send measured data to Excel (TM)\nSend To Excel (TM)"
+    ID_FB12_DOOR            "Open and close the simulated FB12 door.\nOpen/Close FB12 door"
+    ID_VIEW_FB12            "Show or hide the FB12 toolbar\nToggle FB12 Bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FB12_DOORSTATUS      "Door Closed"
+    ID_FB12_TIMER           "M 999m 99.9s"
+    ID_FB12_RX              "RX"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VIEW_IDLEMESSAGE    "View or export data."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\QM.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+#include "SRGres.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

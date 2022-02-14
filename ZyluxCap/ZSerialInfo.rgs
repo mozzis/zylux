@@ -1,0 +1,24 @@
+HKCR
+{
+	ZyluxCap.ZSerialInfo.1 = s 'ZSerialInfo Class'
+	{
+		CLSID = s '{32FD1683-348C-41cf-BE53-B0148CAEC0BA}'
+	}
+	ZyluxCap.ZSerialInfo = s 'ZSerialInfo Class'
+	{
+		CLSID = s '{32FD1683-348C-41cf-BE53-B0148CAEC0BA}'
+		CurVer = s 'ZyluxCap.ZSerialInfo.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {32FD1683-348C-41cf-BE53-B0148CAEC0BA} = s 'ZSerialInfo Class'
+		{
+			ProgID = s 'ZyluxCap.ZSerialInfo.1'
+			VersionIndependentProgID = s 'ZyluxCap.ZSerialInfo'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{F0CB6023-7876-11D2-88A4-00104BF194E2}'
+			'TypeLib' = s '{F0CB6024-7876-11D2-88A4-00104BF194E2}'
+		}
+	}
+}

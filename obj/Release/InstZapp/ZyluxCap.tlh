@@ -1,0 +1,138 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8447.0 (2757c12e).
+//
+// c:\code\zylux\obj\release\instzapp\ZyluxCap.tlh
+//
+// C++ source equivalent of Win32 type library ..\Debug\ZyluxCap.exe
+// compiler-generated file created 09/28/00 at 16:16:46 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace ZyluxCap {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("f0cb6025-7876-11d2-88a4-00104bf194e2"))
+/* dispinterface */ IZyluxCap;
+struct /* coclass */ ZyluxCap;
+struct __declspec(uuid("32fd1680-348c-41cf-be53-b0148caec0ba"))
+/* dual interface */ IZyluxNotify;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IZyluxCap, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IZyluxNotify, __uuidof(IZyluxNotify));
+
+//
+// Type library items
+//
+
+enum ZYNOTIFYCAT
+{
+    ZYNOTIFY_APP = 0,
+    ZYNOTIFY_CAPTURE = 1
+};
+
+enum ZYNOTIFYCODE
+{
+    ZYCODE_COMPLETE = 0,
+    ZYCODE_CANCELED = 1
+};
+
+struct __declspec(uuid("f0cb6025-7876-11d2-88a4-00104bf194e2"))
+IZyluxCap : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetBaud,put=PutBaud))
+    long Baud;
+    __declspec(property(get=GetPort,put=PutPort))
+    short Port;
+    __declspec(property(get=GetFlowCtrl,put=PutFlowCtrl))
+    short FlowCtrl;
+    __declspec(property(get=GetDBits,put=PutDBits))
+    short DBits;
+    __declspec(property(get=GetParity,put=PutParity))
+    short Parity;
+    __declspec(property(get=GetStopBits,put=PutStopBits))
+    short StopBits;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    SCODE Advise (
+        IUnknown * pNotifier );
+    SCODE UnAdvise (
+        IUnknown * pNotifier );
+    HRESULT SetWindowPos (
+        long left,
+        long top,
+        long right,
+        long bottom );
+    HRESULT CenterOnRect (
+        long left,
+        long top,
+        long right,
+        long bottom );
+    HRESULT Quit ( );
+
+    // Properties:
+    long GetBaud ( );
+    void PutBaud ( long _val );
+    short GetPort ( );
+    void PutPort ( short _val );
+    short GetFlowCtrl ( );
+    void PutFlowCtrl ( short _val );
+    short GetDBits ( );
+    void PutDBits ( short _val );
+    short GetParity ( );
+    void PutParity ( short _val );
+    short GetStopBits ( );
+    void PutStopBits ( short _val );
+};
+
+struct __declspec(uuid("f0cb6023-7876-11d2-88a4-00104bf194e2"))
+ZyluxCap;
+    // [ default ] dispinterface IZyluxCap
+
+struct __declspec(uuid("32fd1680-348c-41cf-be53-b0148caec0ba"))
+IZyluxNotify : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Notify (
+        long lCategory,
+        long lReason,
+        IUnknown * pUnk );
+
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall raw_Notify (
+        long lCategory,
+        long lReason,
+        IUnknown * pUnk ) = 0;
+};
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\code\zylux\obj\release\instzapp\ZyluxCap.tli"
+
+} // namespace ZyluxCap
+
+#pragma pack(pop)

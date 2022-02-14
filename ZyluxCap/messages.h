@@ -1,0 +1,18 @@
+/////////////////////////////////////////////////////////////////////////////
+// Copyright (C) 1998 Mayn Idea Software
+// All rights reserved
+/////////////////////////////////////////////////////////////////////////////
+// messages.h : Defines custom messages for this app
+/*
+* $History: messages.h $ * 
+ * 
+ * *****************  Version 1  *****************
+ * User: Maynard      Date: 4/14/00    Time: 10:07a
+ * Created in $/ZyluxCap/2.0
+ * 
+*/
+/////////////////////////////////////////////////////////////////////////////
+
+
+#define WM_APPQUIT WM_APP + 100
+

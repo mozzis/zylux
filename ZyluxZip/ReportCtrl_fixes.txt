@@ -1,0 +1,156 @@
+--------------------------------------------------------------------------------
+Thanks for this control, it's really a great job. I have fixed several bugs and added a few features: 
+There is a bug in: 
+INT CReportCtrl::GetNextSelectedItem(INT iItem) 
+To fix it change the line : 
+for(iItem++;rvi.iItem<iItems;rvi.iItem++) 
+into : 
+for(rvi.iItem = iItem+1;rvi.iItem<iItems;rvi.iItem++) 
+
+The empty string "There are no items to show in this view." is not centered on the current width of the control but on the "virtual" width of the control. To fix it add the following lines in : 
+void CReportCtrl::DrawCtrl(CDC* pDC) 
+
+if(!iRows) 
+{ 
+rectRow.top += 2; 
+rectRow.bottom = rectRow.top + m_iDefaultHeight; 
+
+pDC->SetTextColor(m_crText); 
+// Begin lines added 
+CRect r; 
+GetClientRect(r); 
+r.top = rectRow.top; 
+r.bottom = rectRow.bottom; 
+rectRow = r; 
+// End lines added 
+pDC->DrawText(m_strNoItems, rectRow, DT_CENTER|DT_END_ELLIPSIS); 
+return; 
+} 
+
+I'm using this control in a dialog where it looks better with a 3d border. In order to do this, I hnalde the non-client messages when the control has a WS_STYLE : 
+protected: 
+//{{AFX_MSG(CReportCtrl) 
+.... 
+afx_msg void OnNcCalcSize(BOOL bCalcValidRects, NCCALCSIZE_PARAMS FAR* lpncsp); 
+afx_msg void OnNcPaint(); 
+.... 
+//}}AFX_MSG 
+
+//--------------------------------------------------------------------------- 
+// Border Handling 
+//--------------------------------------------------------------------------- 
+void CReportCtrl::OnNcCalcSize(BOOL bCalcValidRects, NCCALCSIZE_PARAMS FAR* lpncsp) 
+{ 
+// leave place for the border ? 
+LONG style = ::GetWindowLong(m_hWnd,GWL_STYLE); 
+if (style & WS_BORDER) 
+// whatever the value of bCalcValidRects, the first elt of *lpncsp is a RECT 
+::InflateRect(&lpncsp->rgrc[0], -2, -2); 
+// OK, do the default processing for leaving room for the scrollbars if needed 
+Default(); 
+} 
+
+void CReportCtrl::OnNcPaint() 
+{ 
+// do the default processing for painting the scrollbars if needed 
+Default(); 
+// paint the border 
+LONG style = ::GetWindowLong(m_hWnd,GWL_STYLE); 
+if (style & WS_BORDER) 
+{ 
+CWindowDC dc(this); 
+CRect rcBounds; 
+// screen coord. 
+GetWindowRect(rcBounds); 
+// client coord. 
+ScreenToClient(rcBounds); 
+// window coord. 
+rcBounds.OffsetRect(-rcBounds.left, -rcBounds.top); 
+// border 
+dc.DrawEdge(rcBounds, EDGE_SUNKEN, BF_RECT); 
+} 
+} 
+
+
+I'm storing pointer in the lParam of the item. In order to delete the corresponding object when an item is deleted, I added a notification corresponding to this event : 
+
+ReportCtrl.h : 
+
+// Notifications 
+#define RVN_ITEMDRAWPREVIEW (0U-2048U) 
+#define RVN_ITEMCLICK (0U-2049U) 
+#define RVN_ITEMDBCLICK (0U-2050U) 
+#define RVN_SELECTIONCHANGING (0U-2051U) 
+#define RVN_SELECTIONCHANGED (0U-2052U) 
+#define RVN_COLUMNCLICK (0U-2053U) 
+// new notification 
+#define RVN_ITEMDELETED (0U-2054U) 
+
+//{{AFX_MSG(CReportCtrl) 
+.... 
+afx_msg void OnDestroy(); 
+//}}AFX_MSG 
+
+ReportCtrl.cpp : 
+
+BOOL CReportCtrl::DeleteItem(INT iItem) 
+{ 
+RVITEM rvi; 
+rvi.nMask = RVIM_LPARAM; 
+rvi.iItem = iItem; 
+GetItem(&rvi); 
+Notify(RVN_ITEMDELETED, iItem, 0, rvi.lParam); 
+
+m_arrayItems.RemoveAt(iItem); 
+m_arrayRows.RemoveAt(iItem); // the fix! 
+
+INT iItems = m_arrayRows.GetSize(); 
+for(INT i=0;i<iItems;i++) 
+if(m_arrayRows[i]>iItem) 
+m_arrayRows[i]--; 
+
+m_iVirtualHeight--; 
+
+iItems = m_arrayItems.GetSize(); 
+INT iFirst = GetScrollPos32(SB_VERT), iLast; 
+GetVisibleRows(TRUE, &iFirst, &iLast); 
+
+if(iItem<=iFirst || iLast>=iItems-1) 
+GetVisibleRows(TRUE, &iFirst, &iLast, TRUE); 
+
+ScrollWindow(SB_VERT, iFirst); 
+return TRUE; 
+} 
+
+BOOL CReportCtrl::DeleteAllItems() 
+{ 
+for (int iItem = 0; iItem < GetItemCount(); iItem++) 
+{ 
+RVITEM rvi; 
+rvi.nMask = RVIM_LPARAM; 
+rvi.iItem = iItem; 
+GetItem(&rvi); 
+Notify(RVN_ITEMDELETED, iItem, 0, rvi.lParam); 
+} 
+
+m_arrayItems.RemoveAll(); 
+// Modifs : line missing : 
+m_arrayRows.RemoveAll(); 
+m_iVirtualHeight = 0; 
+
+ScrollWindow(SB_VERT, 0); 
+return TRUE; 
+} 
+
+//--------------------------------------------------------------------------- 
+// On destruction, notify the owner of the deletion of the items 
+//--------------------------------------------------------------------------- 
+void CReportCtrl::OnDestroy() 
+{ 
+DeleteAllItems(); 
+CWnd::OnDestroy(); 
+} 
+
+
+Submitted By: Serge Weinstock (2000/01/29) 
+

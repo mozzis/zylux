@@ -1,0 +1,9 @@
+Diskette setup for Zylux Capture version 2.1.6.
+
+This program will produce two folders named Disk1 and Disk2.
+
+When it is finished, copy the contents of the Disk1 and Disk2 directories to separate 1.44Mb diskettes.
+
+Run Setup.Exe on Disk1 to begin the installation.
+
+Do you want to continue?

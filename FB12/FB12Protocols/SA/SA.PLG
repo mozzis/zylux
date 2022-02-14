@@ -1,0 +1,144 @@
+--------------------Configuration: SA - Win32 Release--------------------
+Begining build with project "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sa\SA.DSP", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MD /W3 /GX /O2 /I "..\Protocol" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /Fp"T:\tmp\FB12\SA\Release/SA.pch" /Yu"stdafx.h" /Fo"T:\tmp\FB12\SA\Release/" /Fd"T:\tmp\FB12\SA\Release/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"T:\tmp\FB12\SA\Release/SA.res" /d "NDEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"Release/SA.bsc" "
+			"COFF Linker for 80x86" with flags "ProtocolR.lib Winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SA.pdb" /machine:I386 /out:"Release/SA.exe" /libpath:"..\Protocol\lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x409 /fo"T:\tmp\FB12\SA\Release/SA.res" /d "NDEBUG" /d "_AFXDLL" "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sa\SA.rc"" 
+Creating temp file "C:\WINDOWS\TEMP\RSP9333.TMP" with contents <ProtocolR.lib Winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SA.pdb" /machine:I386 /out:"Release/SA.exe" /libpath:"..\Protocol\lib" 
+"T:\tmp\FB12\SA\Release\ExcelOptions.obj"
+"T:\tmp\FB12\SA\Release\MainFrm.obj"
+"T:\tmp\FB12\SA\Release\SA.obj"
+"T:\tmp\FB12\SA\Release\SAAdvancedDlg.obj"
+"T:\tmp\FB12\SA\Release\SADoc.obj"
+"T:\tmp\FB12\SA\Release\SAEditDlg.obj"
+"T:\tmp\FB12\SA\Release\SAGridWnd.obj"
+"T:\tmp\FB12\SA\Release\SAKineticsView.obj"
+"T:\tmp\FB12\SA\Release\SampGridWnd.obj"
+"T:\tmp\FB12\SA\Release\Sample.obj"
+"T:\tmp\FB12\SA\Release\SAPPS.obj"
+"T:\tmp\FB12\SA\Release\SAView.obj"
+"T:\tmp\FB12\SA\Release\StdAfx.obj"
+"T:\tmp\FB12\SA\Release\SA.res">
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP9333.TMP" 
+Compiling resources...
+Linking...
+
+
+
+SA.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: SA - Win32 Debug--------------------
+Begining build with project "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sa\SA.DSP", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\Protocol" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /Fp"T:\tmp\FB12\SA\Debug/SA.pch" /Yu"stdafx.h" /Fo"T:\tmp\FB12\SA\Debug/" /Fd"T:\tmp\FB12\SA\Debug/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"T:\tmp\FB12\SA\Debug/SA.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/SA.bsc" "
+			"COFF Linker for 80x86" with flags "ProtocolD.lib Winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/SA.pdb" /debug /machine:I386 /out:"Debug/SA.exe" /pdbtype:sept /libpath:"..\Protocol\lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x409 /fo"T:\tmp\FB12\SA\Debug/SA.res" /d "_DEBUG" /d "_AFXDLL" "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sa\SA.rc"" 
+Creating temp file "C:\WINDOWS\TEMP\RSPA014.TMP" with contents <ProtocolD.lib Winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/SA.pdb" /debug /machine:I386 /out:"Debug/SA.exe" /pdbtype:sept /libpath:"..\Protocol\lib" 
+"T:\tmp\FB12\SA\Debug\ExcelOptions.obj"
+"T:\tmp\FB12\SA\Debug\MainFrm.obj"
+"T:\tmp\FB12\SA\Debug\SA.obj"
+"T:\tmp\FB12\SA\Debug\SAAdvancedDlg.obj"
+"T:\tmp\FB12\SA\Debug\SADoc.obj"
+"T:\tmp\FB12\SA\Debug\SAEditDlg.obj"
+"T:\tmp\FB12\SA\Debug\SAGridWnd.obj"
+"T:\tmp\FB12\SA\Debug\SAKineticsView.obj"
+"T:\tmp\FB12\SA\Debug\SampGridWnd.obj"
+"T:\tmp\FB12\SA\Debug\Sample.obj"
+"T:\tmp\FB12\SA\Debug\SAPPS.obj"
+"T:\tmp\FB12\SA\Debug\SAView.obj"
+"T:\tmp\FB12\SA\Debug\StdAfx.obj"
+"T:\tmp\FB12\SA\Debug\SA.res">
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPA014.TMP" 
+Compiling resources...
+Linking...
+
+
+
+SA.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: SA - Win32 Debug Simulate--------------------
+Begining build with project "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sa\SA.DSP", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\Protocol" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /D "FB12_SIMULATE" /Fp"T:\tmp\FB12\SA\DebugS/SA.pch" /Yu"stdafx.h" /Fo"T:\tmp\FB12\SA\DebugS/" /Fd"T:\tmp\FB12\SA\DebugS/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"T:\tmp\FB12\SA\DebugS/SA.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"DebugS/SA.bsc" "
+			"COFF Linker for 80x86" with flags "ProtocolDS.lib Winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"DebugS/SA.pdb" /debug /machine:I386 /out:"DebugS/SA.exe" /pdbtype:sept /libpath:"..\Protocol\lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x409 /fo"T:\tmp\FB12\SA\DebugS/SA.res" /d "_DEBUG" /d "_AFXDLL" "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sa\SA.rc"" 
+Creating temp file "C:\WINDOWS\TEMP\RSPA0F1.TMP" with contents <ProtocolDS.lib Winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"DebugS/SA.pdb" /debug /machine:I386 /out:"DebugS/SA.exe" /pdbtype:sept /libpath:"..\Protocol\lib" 
+"T:\tmp\FB12\SA\DebugS\ExcelOptions.obj"
+"T:\tmp\FB12\SA\DebugS\MainFrm.obj"
+"T:\tmp\FB12\SA\DebugS\SA.obj"
+"T:\tmp\FB12\SA\DebugS\SAAdvancedDlg.obj"
+"T:\tmp\FB12\SA\DebugS\SADoc.obj"
+"T:\tmp\FB12\SA\DebugS\SAEditDlg.obj"
+"T:\tmp\FB12\SA\DebugS\SAGridWnd.obj"
+"T:\tmp\FB12\SA\DebugS\SAKineticsView.obj"
+"T:\tmp\FB12\SA\DebugS\SampGridWnd.obj"
+"T:\tmp\FB12\SA\DebugS\Sample.obj"
+"T:\tmp\FB12\SA\DebugS\SAPPS.obj"
+"T:\tmp\FB12\SA\DebugS\SAView.obj"
+"T:\tmp\FB12\SA\DebugS\StdAfx.obj"
+"T:\tmp\FB12\SA\DebugS\SA.res">
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPA0F1.TMP" 
+Compiling resources...
+Linking...
+
+
+
+SA.exe - 0 error(s), 0 warning(s)
+--------------------Configuration: SA - Win32 Release Simulate--------------------
+Begining build with project "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sa\SA.DSP", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MD /W3 /GX /O2 /I "..\Protocol" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /D "FB12_SIMULATE" /Fp"T:\tmp\FB12\SA\ReleaseS/SA.pch" /Yu"stdafx.h" /Fo"T:\tmp\FB12\SA\ReleaseS/" /Fd"T:\tmp\FB12\SA\ReleaseS/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "NDEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"T:\tmp\FB12\SA\ReleaseS/SA.res" /d "NDEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"ReleaseS/SA.bsc" "
+			"COFF Linker for 80x86" with flags "ProtocolRS.lib Winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"ReleaseS/SA.pdb" /machine:I386 /out:"ReleaseS/SA.exe" /libpath:"..\Protocol\lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating command line "rc.exe /l 0x409 /fo"T:\tmp\FB12\SA\ReleaseS/SA.res" /d "NDEBUG" /d "_AFXDLL" "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sa\SA.rc"" 
+Creating temp file "C:\WINDOWS\TEMP\RSPA1C2.TMP" with contents <ProtocolRS.lib Winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"ReleaseS/SA.pdb" /machine:I386 /out:"ReleaseS/SA.exe" /libpath:"..\Protocol\lib" 
+"T:\tmp\FB12\SA\ReleaseS\ExcelOptions.obj"
+"T:\tmp\FB12\SA\ReleaseS\MainFrm.obj"
+"T:\tmp\FB12\SA\ReleaseS\SA.obj"
+"T:\tmp\FB12\SA\ReleaseS\SAAdvancedDlg.obj"
+"T:\tmp\FB12\SA\ReleaseS\SADoc.obj"
+"T:\tmp\FB12\SA\ReleaseS\SAEditDlg.obj"
+"T:\tmp\FB12\SA\ReleaseS\SAGridWnd.obj"
+"T:\tmp\FB12\SA\ReleaseS\SAKineticsView.obj"
+"T:\tmp\FB12\SA\ReleaseS\SampGridWnd.obj"
+"T:\tmp\FB12\SA\ReleaseS\Sample.obj"
+"T:\tmp\FB12\SA\ReleaseS\SAPPS.obj"
+"T:\tmp\FB12\SA\ReleaseS\SAView.obj"
+"T:\tmp\FB12\SA\ReleaseS\StdAfx.obj"
+"T:\tmp\FB12\SA\ReleaseS\SA.res">
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSPA1C2.TMP" 
+Compiling resources...
+Linking...
+
+
+
+SA.exe - 0 error(s), 0 warning(s)

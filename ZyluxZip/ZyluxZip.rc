@@ -1,0 +1,652 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ZyluxZip.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ZyluxZip.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ZyluxZip"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,23,21,20
+    LTEXT           "ZyluxZip Version 1.0",IDC_APPNAME,40,19,119,8,
+                    SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Change copyright in Version resource, not here",
+                    IDC_COPYRIGHT,40,39,172,8
+    LTEXT           "Change version in Version resource, not here",
+                    IDC_VERINFO,40,29,148,8,SS_NOPREFIX
+END
+
+IDD_ZYLUXZIP_DIALOG DIALOGEX 0, 0, 379, 174
+STYLE DS_SETFOREGROUND | DS_3DLOOK | WS_CHILD
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+MENU IDR_MAINFRAME
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "ZyluxZip Version 1.0",IDC_APPNAME,"Static",SS_SIMPLE | 
+                    SS_NOPREFIX,103,72,119,8,WS_EX_TRANSPARENT
+    LTEXT           "Change version in Version resource, not here",
+                    IDC_VERINFO,103,83,148,8,SS_NOPREFIX
+END
+
+IDD_SITELIST DIALOGEX 0, 0, 362, 162
+STYLE DS_SETFOREGROUND | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Site List"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Site List",IDC_SITELIST,"MFCGridCtrl",WS_TABSTOP,14,17,
+                    273,133,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Save",IDC_LIST_SAVE,316,26,36,14
+    PUSHBUTTON      "&Print",IDC_LIST_PRINT,316,49,36,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,316,72,36,14
+    CTEXT           "Site List Editor",IDC_DLG_TITLE,118,4,51,9
+END
+
+IDD_NAMELIST DIALOGEX 0, 0, 362, 162
+STYLE DS_SETFOREGROUND | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Name List"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Site List",IDC_SITELIST,"MFCGridCtrl",WS_TABSTOP,12,17,
+                    275,131,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Save",IDC_LIST_SAVE,317,26,36,14
+    PUSHBUTTON      "&Print",IDC_LIST_PRINT,317,49,36,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,317,72,36,14
+    CTEXT           "Name List Editor",IDC_DLG_TITLE,136,3,56,9
+END
+
+IDD_RUN_PROTOCOL DIALOGEX 0, 0, 367, 193
+STYLE DS_SETFOREGROUND | DS_3DLOOK | DS_CONTROL | WS_CHILD | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Site List"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_RUN_ASSEMBLY,71,16,93,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_RUN_NAME,71,31,94,72,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Site List",IDC_SITELIST,"MFCGridCtrl",WS_TABSTOP,11,61,
+                    290,123,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    RADIOBUTTON     "&Edit",IDC_EDIT,318,31,42,14,BS_PUSHLIKE | WS_GROUP | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Send &Data",IDC_LIST_SEND,318,53,42,14,WS_GROUP
+    PUSHBUTTON      "&Save",IDC_LIST_SAVE,318,74,42,14
+    PUSHBUTTON      "&Print",IDC_LIST_PRINT,318,95,42,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,318,116,42,14
+    CTEXT           "Run Protocol Editor",IDC_DLG_TITLE,95,3,172,9
+    LTEXT           "Run Assembly:",IDC_STATIC,15,17,51,9
+    LTEXT           "Run Name:",IDC_STATIC,15,32,51,9
+    EDITTEXT        IDC_SITE_COUNT,177,31,22,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    LTEXT           "Sites Selected",IDC_STATIC,205,33,51,10
+    LTEXT           "Assembly Name and Run Name are required",IDC_NEEDNAMES,
+                    171,17,141,10
+    COMBOBOX        IDC_RUN_SLOT,71,46,26,72,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "FB14 Run Slot:",IDC_STATIC,15,48,51,9
+END
+
+IDD_PP_SERIAL DIALOG DISCARDABLE  0, 0, 195, 98
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Serial"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "&Port:",IDC_STATIC,30,14,15,10
+    COMBOBOX        IDC_PORTCB,51,13,55,35,CBS_DROPDOWNLIST | CBS_HASSTRINGS | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "&Baud Rate:",IDC_STATIC,10,30,36,10,NOT WS_GROUP
+    COMBOBOX        IDC_BAUDCB,51,28,55,35,CBS_DROPDOWNLIST | CBS_HASSTRINGS | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "&Data Bits:",IDC_STATIC,14,45,32,10,NOT WS_GROUP
+    COMBOBOX        IDC_DATABITSCB,51,43,55,35,CBS_DROPDOWNLIST | 
+                    CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "P&arity:",IDC_STATIC,17,59,29,10,NOT WS_GROUP
+    COMBOBOX        IDC_PARITYCB,51,58,55,35,CBS_DROPDOWNLIST | 
+                    CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "&Stop Bits:",IDC_STATIC,13,75,33,10,NOT WS_GROUP
+    COMBOBOX        IDC_STOPBITSCB,51,73,55,35,CBS_DROPDOWNLIST | 
+                    CBS_HASSTRINGS | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "DTR/DSR",IDC_DTRDSR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,124,26,50,10
+    CONTROL         "RTS/CTS",IDC_RTSCTS,"Button",BS_AUTOCHECKBOX,124,36,50,
+                    10
+    CONTROL         "XON/XOFF",IDC_XONXOFF,"Button",BS_AUTOCHECKBOX,124,46,
+                    50,10
+    GROUPBOX        "F&low",IDC_STATIC,116,13,61,48
+END
+
+IDD_PP_DATAWIN DIALOG DISCARDABLE  0, 0, 195, 98
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Data Window"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Autowrap",IDC_AUTOWRAP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,19,50,10
+    CONTROL         "New Line",IDC_NEWLINE,"Button",BS_AUTOCHECKBOX,20,31,50,
+                    10
+    CONTROL         "Local Echo",IDC_LOCALECHO,"Button",BS_AUTOCHECKBOX,20,
+                    43,50,10
+    CONTROL         "Display Errors",IDC_DISPLAYERRORS,"Button",
+                    BS_AUTOCHECKBOX,20,56,60,10
+    PUSHBUTTON      "&Font",IDC_FONT,102,19,37,13,WS_GROUP
+END
+
+IDD_PP_APP DIALOG DISCARDABLE  0, 0, 195, 98
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Program"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "(No settings yet)",IDC_STATIC,63,39,55,11
+END
+
+IDD_DATAWIN DIALOG DISCARDABLE  0, 0, 218, 134
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Zylux Terminal Window"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Close",IDOK,7,7,48,14
+    EDITTEXT        IDC_TTYDATA,7,24,204,103,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    CONTROL         "&Hex Mode",IDC_HEXMODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,8,50,11
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,5,0
+ PRODUCTVERSION 1,2,5,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ZyluxZip Site Manager\0"
+            VALUE "FileVersion", "1, 2, 5, 0\0"
+            VALUE "InternalName", "ZyluxZip\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ZyluxZip.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ZyluxZip Site Manager\0"
+            VALUE "ProductVersion", "1, 2, 5, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_ZYLUXZIP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 372
+        BOTTOMMARGIN, 167
+    END
+
+    IDD_SITELIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_NAMELIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 355
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_RUN_PROTOCOL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_PP_SERIAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_PP_DATAWIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_PP_APP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DATAWIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Insert Row\tCtrl+Ins",       ID_EDIT_INS_ROW
+        MENUITEM "&Delete Row\tCtrl+Del",       ID_EDIT_DEL_ROW
+    END
+    MENUITEM "Site &List",                  IDM_SITELIST
+    MENUITEM "Run &Names",                  IDM_RUN_NAMES
+    POPUP "Run &Protocol"
+    BEGIN
+        MENUITEM "&New",                        IDM_RUN_PROTOCOL_NEW
+        MENUITEM "&Open",                       IDM_RUN_PROTOCOL_OPEN
+        MENUITEM "&Delete",                     IDM_RUN_PROTOCOL_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Open Recent &File",           ID_FILE_MRU_FILE1
+    END
+    MENUITEM "&Settings",                   IDM_SETTINGS
+    MENUITEM "&Capture",                    IDM_CAPTURE
+    MENUITEM "&About",                      IDM_ABOUTBOX
+END
+
+IDR_MENU_CONTEXT MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Select &All\tCtrl+A",         ID_EDIT_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Insert Row\tCtrl+Ins",       ID_EDIT_INS_ROW
+        MENUITEM "&Delete Row\tCtrl+Del",       ID_EDIT_DEL_ROW
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS DISCARDABLE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DEL_ROW,        VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_INS_ROW,        VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_ZYLUXZIP            REGISTRY DISCARDABLE    "ZyluxZip.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_RUN_PROTOCOL DLGINIT
+BEGIN
+    IDC_RUN_SLOT, 0x403, 2, 0
+0x0041, 
+    IDC_RUN_SLOT, 0x403, 2, 0
+0x0042, 
+    IDC_RUN_SLOT, 0x403, 2, 0
+0x0043, 
+    IDC_RUN_SLOT, 0x403, 2, 0
+0x0044, 
+    IDC_RUN_SLOT, 0x403, 2, 0
+0x0045, 
+    IDC_RUN_SLOT, 0x403, 2, 0
+0x0046, 
+    IDC_RUN_SLOT, 0x403, 2, 0
+0x0047, 
+    IDC_RUN_SLOT, 0x403, 2, 0
+0x0048, 
+    IDC_RUN_SLOT, 0x403, 2, 0
+0x0049, 
+    IDC_RUN_SLOT, 0x403, 2, 0
+0x004a, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDS_ABOUTBOX            "&About ZyluxZip..."
+    IDR_ENT_APP             "Application Settings"
+    IDR_ENT_DATA            "Data Window"
+    IDR_ENT_TTY             "TTY Settings"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_SITELIST            "Edit the Site List\nEdit Site List"
+    IDM_RUN_NAMES           "Edit the list of Run Names\nEdit Run Names list"
+    IDM_SETTINGS            "Open the Settings pages\nChange Settings"
+    IDM_SEND_DATA           "Send data to FB14\nSend Data"
+    IDM_CAPTURE             "Run the Zylux capture program\nCapture data"
+    IDM_RUN_PROTOCOL_OPEN   "Open exisiting Run Protocol from Disk\nOpen Run Protocol"
+    IDM_RUN_PROTOCOL_NEW    "Create a new Run Protocol\nNew Run Protocol"
+    ID_EDIT_DEL_ROW         "Delete a row from the current grid\nDelete a grid row"
+    ID_EDIT_INS_ROW         "Insert a row in the current grid\nInsert a new row"
+    ID_EDIT_SELECTALL       "Select all rows and columns\nSelect all"
+    IDM_RUN_PROTOCOL_DELETE "Delete an existing Run Protocol\nDelete a Run Protocol"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_ABOUTBOX            "Display the About Box\nAbout Box"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Zylux Zip Site Manager"
+    IDR_ZYLTYPE             "\nZYL\nZYL\nRun Protocol Files (*.zyl)\n.zyl\nZYL.Document\nRun Protocol File"
+    IDS_APPSETTINGS         "Program Settings"
+    IDS_DATA                "Show &Data"
+    IDS_AUTOWRAP            "AutoWrap"
+    IDS_DISPERRS            "Display Errors"
+    IDS_TEXTCOLOR           "Text Color"
+    IDS_NEWLINE             "Add Newline"
+    IDS_HEXMODE             "Hex mode display"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Zylux Zip Site Manager"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this file"
+    ID_FILE_MRU_FILE2       "Open this file"
+    ID_FILE_MRU_FILE3       "Open this file"
+    ID_FILE_MRU_FILE4       "Open this file"
+    ID_FILE_MRU_FILE5       "Open this file"
+    ID_FILE_MRU_FILE6       "Open this file"
+    ID_FILE_MRU_FILE7       "Open this file"
+    ID_FILE_MRU_FILE8       "Open this file"
+    ID_FILE_MRU_FILE9       "Open this file"
+    ID_FILE_MRU_FILE10      "Open this file"
+    ID_FILE_MRU_FILE11      "Open this file"
+    ID_FILE_MRU_FILE12      "Open this file"
+    ID_FILE_MRU_FILE13      "Open this file"
+    ID_FILE_MRU_FILE14      "Open this file"
+    ID_FILE_MRU_FILE15      "Open this file"
+    ID_FILE_MRU_FILE16      "Open this file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COMPREFIX           "COM"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_BAUD110             "110"
+    IDS_BAUD300             "300"
+    IDS_BAUD600             "600"
+    IDS_BAUD1200            "1200"
+    IDS_BAUD2400            "2400"
+    IDS_BAUD4800            "4800"
+    IDS_BAUD9600            "9600"
+    IDS_BAUD14400           "14.4k"
+    IDS_BAUD19200           "19.2k"
+    IDS_BAUD38400           "38.4k"
+    IDS_BAUD56000           "56k"
+    IDS_BAUD128000          "128k"
+    IDS_BAUD256000          "256k"
+    IDS_FLOWCTRL            "Flow Control"
+    IDS_PARITY              "Parity"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PARITYNONE          "None"
+    IDS_PARITYEVEN          "Even"
+    IDS_PARITYODD           "Odd"
+    IDS_PARITYMARK          "Mark"
+    IDS_PARITYSPACE         "Space"
+    IDS_STOPBIT             "Stop Bits"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ONESTOPBIT          "1"
+    IDS_ONE5STOPBITS        "1.5"
+    IDS_TWOSTOPBITS         "2"
+    IDS_COMDEV              "Com Device"
+    IDS_LOCALECHO           "Local Echo"
+    IDS_PORTNO              "Port Number"
+    IDS_BAUDRATE            "Baud Rate"
+    IDS_XONOFF              "XonXoff"
+    IDS_BYTESIZE            "Byte Size"
+    IDS_CURRENT_SLOT        "Current Slot Number"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDCLOSE                 "Close the program"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window from a minimized state\nRestore Window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCMOVE          "Move the window with the keyboard\nMove window"
+    AFX_IDS_SCMINIMIZE      "Minimize the window to an icon\nMinimize window"
+    AFX_IDS_SCCLOSE         "Close the program\nClose"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_SHOWDATA            "Show the TTY debug window\nShow TTY data"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FONTHEIGHT          "DataWin Font Height"
+    IDS_FONTWIDTH           "DataWin Font Width"
+    IDS_FONTWEIGHT          "DataWin Font Weight"
+    IDS_FONTITALIC          "DataWin Font Italic"
+    IDS_FONTPITCH           "DataWin Font Pitch"
+    IDS_FONTNAME            "DataWin Font Name"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ZyluxZip.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

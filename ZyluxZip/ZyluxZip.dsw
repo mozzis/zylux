@@ -1,0 +1,96 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "InstZApp"=..\InstZApp\InstZApp.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/ZyluxZip/InstZCap", XXCAAAAA
+    ..\instzapp
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TestATL"=..\TestATL\TestATL.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "TestInst"=..\TestInst\TestInst.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/ZyluxZip/TestInst", YXCAAAAA
+    ..\testinst
+    end source code control
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name InstZApp
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "ZyluxCap"=..\ZyluxCap\ZyluxCap.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/ZyluxCap/2.0", 
+    ..\zyluxcap
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ZyluxZip"=.\ZyluxZip.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/ZyluxZip", PRCAAAAA
+    .
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{C8CA6D9E-64C1-4FEC-BA19-AD3828C4B524} = s 'ZyluxZip'
+		'ZyluxZip.EXE'
+		{
+			val AppID = s {C8CA6D9E-64C1-4FEC-BA19-AD3828C4B524}
+		}
+	}
+}

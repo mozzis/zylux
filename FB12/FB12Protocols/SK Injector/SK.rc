@@ -1,0 +1,1225 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\SK.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "#include ""SRGRes.rc""\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SK.ico"
+IDR_SKTYPE              ICON    DISCARDABLE     "res\\SKDoc.ico"
+IDR_SKVIEWTYPE          ICON    DISCARDABLE     "res\\idr_SKty.ico"
+IDR_KINETICSFRAME       ICON    DISCARDABLE     "res\\idr_main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_FB12                BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_MEASURE             BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDR_VIEWFRAME           BITMAP  MOVEABLE PURE   "res\\mainfram.bmp"
+IDR_INJECTOR            BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EXCEL
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_MEASURE_GRID
+    BUTTON      ID_MEASURE_KINETICS
+    BUTTON      ID_KINETICS_ZOOMOUT
+    SEPARATOR
+    BUTTON      ID_WINDOW_TILE_HORZ
+    BUTTON      ID_WINDOW_TILE_VERT
+END
+
+IDR_FB12 TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FB12_DOOR
+END
+
+IDR_MEASURE TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_MEASURE_START
+    BUTTON      ID_MEASURE_STOP
+END
+
+IDR_VIEWFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EXCEL
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_MEASURE_GRID
+    BUTTON      ID_MEASURE_KINETICS
+    BUTTON      ID_KINETICS_ZOOMOUT
+    SEPARATOR
+    BUTTON      ID_WINDOW_TILE_HORZ
+    BUTTON      ID_WINDOW_TILE_VERT
+END
+
+IDR_INJECTOR TOOLBAR DISCARDABLE  16, 17
+BEGIN
+    BUTTON      ID_BUTTON_INIT
+    SEPARATOR
+    BUTTON      ID_BUTTON_INJECTOR1
+    BUTTON      ID_BUTTON_INJECTOR2
+    SEPARATOR
+    BUTTON      ID_BUTTON_UP
+    BUTTON      ID_BUTTON_DOWN
+    SEPARATOR
+    BUTTON      ID_BUTTON_LEFT
+    BUTTON      ID_BUTTON_RIGHT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Single Kinetics...",   ID_APP_ABOUT
+    END
+END
+
+IDR_SKTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Save As &Text...",            ID_FILE_SAVE_AS_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "Send to &Excel (TM)\tCtrl+E", ID_EXCEL
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Measure Bar",                ID_VIEW_RUNBAR
+        MENUITEM "&Injector Bar",               ID_VIEW_INJECTBAR
+    END
+    POPUP "&Measure"
+    BEGIN
+        MENUITEM "&Start measurement\tEnter or Space", ID_MEASURE_START
+        MENUITEM "S&top measurement\tEsc",      ID_MEASURE_STOP
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontal",            ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertical",              ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Show Table\tCtrl+T",         ID_MEASURE_GRID
+        MENUITEM "Show &Kinetics Graph\tCtrl+K", ID_MEASURE_KINETICS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Single Kinetics...",   ID_APP_ABOUT
+    END
+END
+
+IDR_SKVIEWTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "Save As &Text...",            ID_FILE_SAVE_AS_TEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "Send to &Excel (TM)\tCtrl+E", ID_EXCEL
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontal",            ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertical",              ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Show Table\tCtrl+T",         ID_MEASURE_GRID
+        MENUITEM "Show &Kinetics Graph\tCtrl+K", ID_MEASURE_KINETICS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Single Kinetics...",   ID_APP_ABOUT
+    END
+END
+
+IDR_CONTEXT MENU DISCARDABLE 
+BEGIN
+    MENUITEM "&Copy",                       ID_EDIT_COPY
+    MENUITEM "&Set background to",          ID_CONTEXT_BACKGROUND
+END
+
+IDR_SKKINETICSTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Measure Bar",                ID_VIEW_RUNBAR
+        MENUITEM "&Injector Bar",               ID_VIEW_INJECTBAR
+    END
+    POPUP "&Measure"
+    BEGIN
+        MENUITEM "&Start Measurement\tEnter or Space", ID_MEASURE_START
+        MENUITEM "S&top Measurement\tEsc",      ID_MEASURE_STOP
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontal",            ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertical",              ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Show Table\tCtrl+T",         ID_MEASURE_GRID
+        MENUITEM "Show &Kinetics Graph\tCtrl+K", ID_MEASURE_KINETICS
+        MENUITEM "&Unzoom\tCtrl+U",             ID_KINETICS_ZOOMOUT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Single Kinetics...",   ID_APP_ABOUT
+    END
+END
+
+IDR_SKKINETICSVIEWTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "&Measure Bar",                ID_VIEW_RUNBAR
+        MENUITEM "&Injector Bar",               ID_VIEW_INJECTBAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile Horizontal",            ID_WINDOW_TILE_HORZ
+        MENUITEM "Tile &Vertical",              ID_WINDOW_TILE_VERT
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Show Table\tCtrl+T",         ID_MEASURE_GRID
+        MENUITEM "Show &Kinetics Graph\tCtrl+K", ID_MEASURE_KINETICS
+        MENUITEM "&Unzoom\tCtrl+U",             ID_KINETICS_ZOOMOUT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Single Kinetics...",   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_EXCEL,               VIRTKEY, CONTROL, NOINVERT
+    "K",            ID_MEASURE_KINETICS,    VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_MEASURE_GRID,        VIRTKEY, CONTROL, NOINVERT
+    "U",            ID_KINETICS_ZOOMOUT,    VIRTKEY, CONTROL, NOINVERT
+    VK_ESCAPE,      ID_MEASURE_STOP,        VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 244, 74
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Single Kinetics"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC_PROGICON,11,11,20,20,SS_NOTIFY
+    LTEXT           "Single Kinetics with CAVRO Injector Protocol",
+                    IDC_STATIC_PROGSTR,40,10,180,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 1998 Softstep Corporation",IDC_STATIC,40,
+                    39,137,8
+    DEFPUSHBUTTON   "OK",IDOK,205,36,32,14,WS_GROUP
+    LTEXT           "Add-on Protocol Version 1.3",IDC_STATIC_INJECTVERSION,
+                    40,19,180,8,SS_NOPREFIX
+    LTEXT           "Version 1.1",IDC_STATIC_VERSION,40,28,180,8,SS_NOPREFIX
+END
+
+IDD_SKVIEW DIALOGEX 0, 0, 327, 216
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Custom1",IDC_SKGRID,"GXWND",WS_BORDER | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP,0,77,327,138
+    LTEXT           "Background:",IDC_STATIC_BACKGROUND,4,45,42,8
+    EDITTEXT        IDC_EDIT_BACKGROUND,50,43,47,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "RLU/s",IDC_STATIC_RLUS,103,45,21,8
+    LTEXT           "Date:",IDC_STATIC_DATE,2,9,19,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_DATE,23,8,56,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Delay time:",IDC_STATIC_DELAYTIMEA,84,9,47,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_DELAYTIME,133,8,66,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Interval time:",IDC_STATIC_INTERVALTIME,205,9,41,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_INTERVALTIME,248,8,66,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Time:",IDC_STATIC_TIME,0,24,21,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_TIME,23,23,56,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Sampling time:",IDC_STATIC_MEASTIME,84,24,47,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_MEASTIME,133,23,66,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Duration:",IDC_STATIC_DURATIONTIME,205,24,41,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_EDIT_DURATIONTIME,248,23,66,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Injections: Injector          Time               Volume (uL)",
+                    IDC_STATIC_INJECTS,151,44,173,8
+    LISTBOX         IDC_LIST_INJECTS,185,53,138,25,NOT LBS_NOTIFY | 
+                    LBS_USETABSTOPS | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SKEDIT DIALOG DISCARDABLE  0, 0, 329, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Single Kinetics Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Time settings",IDC_STATIC,7,3,253,79
+    LTEXT           "Delay time:",IDC_STATIC_DELAY,13,15,37,8
+    EDITTEXT        IDC_EDIT_DELAY,13,24,47,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN_DELAY,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,61,24,11,12
+    LTEXT           "Total duration:",IDC_STATIC_DURATION,80,15,57,8
+    EDITTEXT        IDC_EDIT_DURATION,80,24,66,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN_DURATIONMIN,"msctls_updown32",
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS,146,24,11,12
+    CONTROL         "Spin1",IDC_SPIN_DURATIONSEC,"msctls_updown32",
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS,157,24,11,12
+    LTEXT           "Sampling time:",IDC_STATIC_MEAS,176,15,48,8
+    EDITTEXT        IDC_EDIT_MEAS,176,24,66,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN_MEAS,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,242,24,11,12
+    LTEXT           "No. of data points:",IDC_STATIC_NUMSAMP,80,46,72,8
+    EDITTEXT        IDC_EDIT_NUMSAMP,80,55,66,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_NUMSAMP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,146,55,11,12
+    LTEXT           "Interval time:",IDC_STATIC_INTERVAL,176,46,42,8
+    EDITTEXT        IDC_EDIT_INTERVAL,176,55,66,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Note: Interval time = Total duration / No. of data points  (to nearest 0.2s)",
+                    IDC_STATIC,13,70,242,8
+    GROUPBOX        "Start timer by",IDC_GROUP_STARTBY,7,87,160,38
+    CONTROL         "Start button or space bar or enter key",
+                    IDC_RADIO_STARTBUTTON,"Button",BS_AUTORADIOBUTTON,15,97,
+                    146,8
+    CONTROL         "Door close",IDC_RADIO_DOORCLOSE,"Button",
+                    BS_AUTORADIOBUTTON,15,111,51,8
+    LTEXT           "No. of replicates:",IDC_STATIC_NUMREP,184,97,74,8
+    EDITTEXT        IDC_EDIT_NUMREP,184,106,47,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_NUMREP,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,232,106,11,12
+    LTEXT           "Comment:",IDC_STATIC_COMMENT,7,128,46,8
+    EDITTEXT        IDC_EDIT_COMMENT,7,137,312,27,ES_MULTILINE | 
+                    ES_AUTOVSCROLL
+    PUSHBUTTON      "Advanced  Options...",IDC_ADVANCED,30,169,80,14
+    DEFPUSHBUTTON   "Save",IDC_SAVE,270,7,50,14
+    PUSHBUTTON      "Save As...",IDC_SAVEAS,270,26,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,270,53,50,14
+    PUSHBUTTON      "Excel (TM) Options...",IDC_EXCEL,216,169,80,14
+    PUSHBUTTON      "Injector Options...",IDC_INJECTOR,123,169,80,14
+END
+
+IDD_PPSDIALOG DIALOG DISCARDABLE  0, 0, 196, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save protocol"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "New protocol:",PPS_IDC_STATIC_PROTOCOL,7,85,121,8
+    EDITTEXT        PPS_IDC_EDIT_PROTOCOL,7,94,121,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Save",IDOK,139,85,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,139,102,50,14
+    LTEXT           "Current protocols:",PPS_IDC_STATIC_PROTOCOLS,7,7,121,8
+    LISTBOX         PPS_IDC_LIST_PROTOCOLS,7,16,182,62,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_GRAPHVIEW DIALOG DISCARDABLE  0, 0, 353, 171
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_CHART,"Static",SS_BLACKFRAME | SS_NOTIFY,0,0,353,
+                    170
+END
+
+IDD_SKADVANCED DIALOG DISCARDABLE  0, 0, 216, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Single Kinetics Advanced Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Use luminometer as time basis",IDC_CHECK_TIMEBASE,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,18,115,8
+    DEFPUSHBUTTON   "OK",IDOK,159,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,24,50,14
+END
+
+IDD_GRAPHOPTVIEW DIALOG DISCARDABLE  0, 0, 301, 129
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Smoothing",IDC_CHECK_SMOOTHING,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,13,58,8
+    CONTROL         "Log scale",IDC_CHECK_LOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,28,58,8
+    GROUPBOX        "RLU range",IDC_STATIC_RLURANGE,66,0,177,45
+    CONTROL         "Automatic",IDC_RADIO_AUTOMATIC,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,72,13,54,8
+    CONTROL         "Manual",IDC_RADIO_MANUAL,"Button",BS_AUTORADIOBUTTON,72,
+                    28,39,8
+    LTEXT           "min:",IDC_STATIC,116,28,14,8
+    EDITTEXT        IDC_EDIT_MIN,130,26,43,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "max:",IDC_STATIC,177,28,16,8
+    EDITTEXT        IDC_EDIT_MAX,193,26,43,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Group",IDC_STATIC1_COL1,9,58,33,8
+    LTEXT           "Integral",IDC_STATIC1_COL2,60,49,33,8
+    LTEXT           "(RLU/s)",IDC_STATIC2_COL2,60,57,33,8
+    LTEXT           "Peak height",IDC_STATIC1_COL3,110,49,44,8
+    LTEXT           "(RLU/s)",IDC_STATIC2_COL3,110,57,44,8
+    LTEXT           "Peak at",IDC_STATIC1_COL4,160,57,31,8
+    LTEXT           "Time of",IDC_STATIC1_COL5,210,49,31,8
+    LTEXT           "half max",IDC_STATIC2_COL5,210,57,31,8
+    LTEXT           "Time of",IDC_STATIC1_COL6,260,49,38,8
+    LTEXT           "max decay",IDC_STATIC2_COL6,260,57,38,8
+    LISTBOX         IDC_LIST_REPLICATES,0,67,301,62,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EXCELOPTIONS DIALOG DISCARDABLE  0, 0, 294, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Single Kinetics Excel (TM) Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Auto-send to Excel (TM) at measurement completion",
+                    IDC_CHECK_AUTOSEND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    7,7,180,8
+    LTEXT           "Workbook:",IDC_STATIC,7,23,38,10
+    EDITTEXT        IDC_EDIT_WORKBOOK,51,21,119,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Browse...",IDC_BROWSE,173,21,50,12
+    LTEXT           "Worksheet:",IDC_STATIC,7,41,38,8
+    EDITTEXT        IDC_EDIT_WORKSHEET,51,38,119,12,ES_AUTOHSCROLL
+    LTEXT           "At cell:",IDC_STATIC,8,59,42,8
+    LTEXT           "Excel (TM) macro:",IDC_STATIC,7,76,42,8
+    EDITTEXT        IDC_EDIT_MACRO,51,74,119,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,237,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,237,24,50,14
+    COMBOBOX        IDC_COMBO_COL,51,56,58,64,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_ROW,113,56,58,12,ES_AUTOHSCROLL
+END
+
+IDD_INJECTOROPTIONS DIALOG DISCARDABLE  0, 0, 341, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Single Kinetics Injector Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,255,13,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,255,30,50,14
+    GROUPBOX        "Number of Cavro XP3000 Injectors used:",IDC_STATIC,15,7,
+                    230,27
+    CONTROL         "None (0)",IDC_RADIO_NOINJECT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,34,18,43,10
+    CONTROL         "One (1)",IDC_RADIO_ONEINJECT,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,105,18,39,10
+    CONTROL         "Two (2)",IDC_RADIO_TWOINJECT,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,176,18,40,10
+    GROUPBOX        "",IDC_GROUP_INJECTOR,12,46,311,165
+    LTEXT           "Port:",IDC_STATIC_IPORT,23,52,23,8
+    COMBOBOX        IDC_COMBO_IPORT,21,63,51,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Syringe 1 Volume:",IDC_STATIC_VOLUME,107,53,66,8
+    COMBOBOX        IDC_COMBO_VOLUME,107,63,77,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Syringe 2 Volume:",IDC_STATIC_VOLUME2,107,77,71,8
+    COMBOBOX        IDC_COMBO_VOLUME2,107,86,77,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Injection 1 Speed:",IDC_STATIC_SPEED,218,53,62,8
+    COMBOBOX        IDC_COMBO_SPEED,218,63,58,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Injection 2 Speed:",IDC_STATIC_SPEED2,219,77,64,8
+    COMBOBOX        IDC_COMBO_SPEED2,219,86,58,60,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Injector Number:",IDC_STATIC_INJECTNUM,20,97,61,8
+    LTEXT           "None (0)",IDC_STATIC_INJECTNONE,15,109,27,8
+    LTEXT           "One (1)",IDC_STATIC_INJECTONE,50,109,23,8
+    LTEXT           "Two (2)",IDC_STATIC_INJECTTWO,85,109,25,8
+    LTEXT           "Injection Times:",IDC_STATIC_TIMES,121,109,69,8
+    LTEXT           "Injection Volumes (microliters):",IDC_STATIC_VOLUMES,
+                    214,109,96,8
+    CONTROL         "1",IDC_RADIO_SKIP1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_TABSTOP,17,122,20,10
+    CONTROL         "",IDC_RADIO_USE1_1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_TABSTOP,52,123,16,8
+    CONTROL         "",IDC_RADIO_USE2_1,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_TABSTOP,83,123,16,8
+    EDITTEXT        IDC_EDIT_TIME1,121,122,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN_TIME1MIN,"msctls_updown32",
+                    UDS_ARROWKEYS,179,121,11,14
+    CONTROL         "Spin3",IDC_SPIN_TIME1SEC,"msctls_updown32",
+                    UDS_ARROWKEYS,191,121,11,14
+    EDITTEXT        IDC_EDIT_VOL1,239,122,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_VOL1,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,281,121,11,14
+    CONTROL         "2",IDC_RADIO_SKIP2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,18,140,20,10
+    CONTROL         "",IDC_RADIO_USE1_2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_TABSTOP,52,141,16,8
+    CONTROL         "",IDC_RADIO_USE2_2,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_TABSTOP,84,141,16,8
+    EDITTEXT        IDC_EDIT_TIME2,121,139,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN_TIME2MIN,"msctls_updown32",
+                    UDS_ARROWKEYS,179,138,11,14
+    CONTROL         "Spin3",IDC_SPIN_TIME2SEC,"msctls_updown32",
+                    UDS_ARROWKEYS,191,138,11,14
+    EDITTEXT        IDC_EDIT_VOL2,239,139,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_VOL2,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,281,138,11,14
+    CONTROL         "3",IDC_RADIO_SKIP3,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,18,158,20,10
+    CONTROL         "",IDC_RADIO_USE1_3,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_TABSTOP,52,159,16,8
+    CONTROL         "",IDC_RADIO_USE2_3,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_TABSTOP,84,159,16,8
+    EDITTEXT        IDC_EDIT_TIME3,121,156,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN_TIME3MIN,"msctls_updown32",
+                    UDS_ARROWKEYS,179,155,11,14
+    CONTROL         "Spin3",IDC_SPIN_TIME3SEC,"msctls_updown32",
+                    UDS_ARROWKEYS,191,155,11,14
+    EDITTEXT        IDC_EDIT_VOL3,239,156,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_VOL3,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,281,155,11,14
+    CONTROL         "4",IDC_RADIO_SKIP4,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,18,176,20,10
+    CONTROL         "",IDC_RADIO_USE1_4,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_TABSTOP,52,176,16,8
+    CONTROL         "",IDC_RADIO_USE2_4,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_TABSTOP,84,176,16,8
+    EDITTEXT        IDC_EDIT_TIME4,121,173,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN_TIME4MIN,"msctls_updown32",
+                    UDS_ARROWKEYS,179,172,11,14
+    CONTROL         "Spin3",IDC_SPIN_TIME4SEC,"msctls_updown32",
+                    UDS_ARROWKEYS,191,172,11,14
+    EDITTEXT        IDC_EDIT_VOL4,239,173,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_VOL4,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,281,172,11,14
+    CONTROL         "5",IDC_RADIO_SKIP5,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,18,193,20,10
+    CONTROL         "",IDC_RADIO_USE1_5,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_TABSTOP,52,193,16,8
+    CONTROL         "",IDC_RADIO_USE2_5,"Button",BS_AUTORADIOBUTTON | 
+                    BS_LEFTTEXT | WS_TABSTOP,84,193,16,8
+    EDITTEXT        IDC_EDIT_TIME5,121,190,56,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Spin1",IDC_SPIN_TIME5MIN,"msctls_updown32",
+                    UDS_ARROWKEYS,179,189,11,14
+    CONTROL         "Spin3",IDC_SPIN_TIME5SEC,"msctls_updown32",
+                    UDS_ARROWKEYS,191,189,11,14
+    EDITTEXT        IDC_EDIT_VOL5,239,190,40,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_SPIN_VOL5,"msctls_updown32",UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,281,189,11,14
+END
+
+IDD_INJECTWARN DIALOG DISCARDABLE  0, 0, 243, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Injector Warning"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,185,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,185,24,50,14
+    LTEXT           "It is possible to damage the FB12 luminometer by injecting fluid while the luminometer door is open.\n\nTo prevent this hazard, do not open the door of the FB12 during measurement of a replicate or while the Cavro injectors are injecting.",
+                    IDC_STATIC_WARN,11,4,165,52
+    CONTROL         "Do not show this warning again.",IDC_CHECK_HIDE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,68,127,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,0
+ PRODUCTVERSION 1,1,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Softstep Corporation\0"
+            VALUE "FileDescription", "Single Kinetics with Cavro Injector Protocol\0"
+            VALUE "FileVersion", "1, 1, 0, 0\0"
+            VALUE "InternalName", "SK\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "OriginalFilename", "SK INJECT.EXE\0"
+            VALUE "ProductName", "Single Kinetics with Cavro Injector Protocol\0"
+            VALUE "ProductVersion", "1, 1, 0, 0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 237
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_SKVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_SKEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 322
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_PPSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_GRAPHVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 164
+    END
+
+    IDD_SKADVANCED, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+
+    IDD_GRAPHOPTVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_EXCELOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_INJECTOROPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 334
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_INJECTWARN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 236
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_INJECTOROPTIONS DLGINIT
+BEGIN
+    IDC_COMBO_IPORT, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    IDC_COMBO_IPORT, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    IDC_COMBO_IPORT, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    IDC_COMBO_IPORT, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    IDC_COMBO_IPORT, 0x403, 5, 0
+0x4f43, 0x354d, "\000" 
+    IDC_COMBO_IPORT, 0x403, 5, 0
+0x4f43, 0x364d, "\000" 
+    IDC_COMBO_IPORT, 0x403, 5, 0
+0x4f43, 0x374d, "\000" 
+    IDC_COMBO_IPORT, 0x403, 5, 0
+0x4f43, 0x384d, "\000" 
+    IDC_COMBO_VOLUME, 0x403, 20, 0
+0x3035, 0x6d20, 0x6369, 0x6f72, 0x696c, 0x6574, 0x7372, 0x2820, 0x4c75, 
+0x0029, 
+    IDC_COMBO_VOLUME, 0x403, 20, 0
+0x3031, 0x2030, 0x696d, 0x7263, 0x6c6f, 0x7469, 0x7265, 0x2873, 0x4c75, 
+0x0029, 
+    IDC_COMBO_VOLUME, 0x403, 20, 0
+0x3532, 0x2030, 0x696d, 0x7263, 0x6c6f, 0x7469, 0x7265, 0x2873, 0x4c75, 
+0x0029, 
+    IDC_COMBO_VOLUME, 0x403, 20, 0
+0x3035, 0x2030, 0x696d, 0x7263, 0x6c6f, 0x7469, 0x7265, 0x2873, 0x4c75, 
+0x0029, 
+    IDC_COMBO_VOLUME, 0x403, 21, 0
+0x2e31, 0x2030, 0x696d, 0x6c6c, 0x6c69, 0x7469, 0x7265, 0x2073, 0x6d28, 
+0x294c, "\000" 
+    IDC_COMBO_VOLUME, 0x403, 21, 0
+0x2e32, 0x2035, 0x696d, 0x6c6c, 0x6c69, 0x7469, 0x7265, 0x2073, 0x6d28, 
+0x294c, "\000" 
+    IDC_COMBO_VOLUME, 0x403, 21, 0
+0x2e35, 0x2030, 0x696d, 0x6c6c, 0x6c69, 0x7469, 0x7265, 0x2073, 0x6d28, 
+0x294c, "\000" 
+    IDC_COMBO_VOLUME2, 0x403, 20, 0
+0x3035, 0x6d20, 0x6369, 0x6f72, 0x696c, 0x6574, 0x7372, 0x2820, 0x4c75, 
+0x0029, 
+    IDC_COMBO_VOLUME2, 0x403, 20, 0
+0x3031, 0x2030, 0x696d, 0x7263, 0x6c6f, 0x7469, 0x7265, 0x2873, 0x4c75, 
+0x0029, 
+    IDC_COMBO_VOLUME2, 0x403, 20, 0
+0x3532, 0x2030, 0x696d, 0x7263, 0x6c6f, 0x7469, 0x7265, 0x2873, 0x4c75, 
+0x0029, 
+    IDC_COMBO_VOLUME2, 0x403, 20, 0
+0x3035, 0x2030, 0x696d, 0x7263, 0x6c6f, 0x7469, 0x7265, 0x2873, 0x4c75, 
+0x0029, 
+    IDC_COMBO_VOLUME2, 0x403, 21, 0
+0x2e31, 0x2030, 0x696d, 0x6c6c, 0x6c69, 0x7469, 0x7265, 0x2073, 0x6d28, 
+0x294c, "\000" 
+    IDC_COMBO_VOLUME2, 0x403, 21, 0
+0x2e32, 0x2035, 0x696d, 0x6c6c, 0x6c69, 0x7469, 0x7265, 0x2073, 0x6d28, 
+0x294c, "\000" 
+    IDC_COMBO_VOLUME2, 0x403, 21, 0
+0x2e35, 0x2030, 0x696d, 0x6c6c, 0x6c69, 0x7469, 0x7265, 0x2073, 0x6d28, 
+0x294c, "\000" 
+    IDC_COMBO_SPEED, 0x403, 13, 0
+0x3832, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 13, 0
+0x3532, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 13, 0
+0x3232, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 13, 0
+0x3931, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 13, 0
+0x3631, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 13, 0
+0x3331, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 13, 0
+0x3131, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 13, 0
+0x3031, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 12, 0
+0x3039, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 12, 0
+0x3038, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 12, 0
+0x3037, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 12, 0
+0x3036, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 12, 0
+0x3035, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 12, 0
+0x3034, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 12, 0
+0x3033, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 12, 0
+0x3032, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 12, 0
+0x3031, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3539, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3039, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3538, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3038, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3537, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3037, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3536, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3036, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3535, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3035, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3534, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3034, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3533, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3033, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3532, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3032, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3531, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 11, 0
+0x3031, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED, 0x403, 10, 0
+0x2039, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 10, 0
+0x2038, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 10, 0
+0x2037, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 10, 0
+0x2036, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED, 0x403, 10, 0
+0x2035, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 13, 0
+0x3832, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 13, 0
+0x3532, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 13, 0
+0x3232, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 13, 0
+0x3931, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 13, 0
+0x3631, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 13, 0
+0x3331, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 13, 0
+0x3131, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 13, 0
+0x3031, 0x3030, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 12, 0
+0x3039, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 12, 0
+0x3038, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 12, 0
+0x3037, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 12, 0
+0x3036, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 12, 0
+0x3035, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 12, 0
+0x3034, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 12, 0
+0x3033, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 12, 0
+0x3032, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 12, 0
+0x3031, 0x2030, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3539, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3039, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3538, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3038, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3537, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3037, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3536, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3036, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3535, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3035, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3534, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3034, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3533, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3033, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3532, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3032, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3531, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 11, 0
+0x3031, 0x7320, 0x6574, 0x7370, 0x732f, "\000" 
+    IDC_COMBO_SPEED2, 0x403, 10, 0
+0x2039, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 10, 0
+0x2038, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 10, 0
+0x2037, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 10, 0
+0x2036, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    IDC_COMBO_SPEED2, 0x403, 10, 0
+0x2035, 0x7473, 0x7065, 0x2f73, 0x0073, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Single Kinetics Injector"
+    IDR_SKTYPE              "\nSK_\n\nMeasurement Data (*.mds)\n.mds\nMeasurement.Data\nMeasurement Data"
+    IDR_SKVIEWTYPE          "\nSK_\n\nMeasurement Data (*.mds)\n.mds\nMeasurement.Data\nMeasurement Data"
+    IDS_FB12_CONTROL_FAILED "Cannot create FB12 Control instance."
+    IDS_FB12_EVENTS_FAILED  "Cannot create FB12 events object."
+    IDS_FB12_ADVISE_FAILED  "Cannot create advise link with FB12 OLE/COM object."
+    IDS_FB12_SERIAL_FAILED  "Unable to start FB12 serial communications."
+    IDS_FB12_TIMEOUT        "The instrument is not sending data.\n\nPlease make sure the instrument is set to\nPC-Operation mode, check the serial cables,\nand check the serial parameters."
+    IDS_FB12_ERROR_INIT     "An FB12 serial initialization error occurred.\n\nOpen and close the door to retake measurement."
+    IDS_FB12_ERROR_GENERAL  "An FB12 general serial error occurred.\n\nOpen and close the door to retake measurement."
+    IDS_FB12_ERROR_CHECKSUM "An FB12 serial checksum error occurred.\n\nOpen and close the door to retake measurement."
+    IDS_MEASUREMESSAGE      "Measuring..."
+    IDS_FB12_DOOROPENED     "The instrument door was opened during a measurement.\n\nClose the door to retake the measurement."
+    IDS_DELAYMESSAGE        "Waiting for delay time to pass..."
+    IDS_OUTOFTIME           "This is an evaluation copy which has expired.\n\nPlease contact Softstep Corporation to purchase this software.\n\n7801 N. Lamar, Suite A-139\nAustin, TX  78752\nwww.softstep.com\n512-323-2760"
+    IDS_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Single Kinetics Injector"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the measured data\nSave"
+    ID_FILE_SAVE_AS         "Save the measured data with a new name\nSave As"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles horizontally\nTile Windows Horizontally"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles vertically\nTile Windows Vertically"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_RUNBAR          "Show or hide the measure toolbar\nToggle Measure Bar"
+    ID_FILE_SAVEASTEXT      "Save the active document as tab-delimited text with a new name\nSave As Text"
+    ID_FILE_SAVE_AS_TEXT    "Save the measured data to a tab-delimited text file\nSave As Text"
+    ID_EXCEL                "Send measured data to Excel (TM)\nTo Excel (TM)"
+    ID_FB12_DOOR            "Open and close the simulated FB12 door.\nOpen/Close FB12 door"
+    ID_MEASURE_START        "Start taking a measurement\nStart measurement"
+    ID_MEASURE_STOP         "Halt a measurement in progess\nStop measurement"
+    ID_MEASURE_DELETE       "Delete the last measurement\nDelete last measurement"
+    ID_MEASURE_KINETICS     "Show the kinetics graph window\nShow Kinetics Graph"
+    ID_KINETICS_ZOOMOUT     "Unzoom the kinetics graph\nUnzoom Kinetics Graph"
+    ID_CONTEXT_BACKGROUNDA  "Set the background for series A to value\nSet background A"
+    ID_CONTEXT_BACKGROUNDB  "Set the background for series B to value\nSet background B"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FB12_DOORSTATUS      "Door Closed"
+    ID_FB12_TIMER           "M 99d 99h 99m 99.9s"
+    ID_FB12_RX              "RX"
+    ID_BUTTON_INIT          "Initialize any injectors for use.\nInitialize Injector(s)"
+    ID_BUTTON_INJECTOR1     "Choose Injector 1.\nInjector 1"
+    ID_BUTTON_INJECTOR2     "Choose Injector 2.\nInjector 2"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MEASURE_GRID         "Show the table window\nShow Table"
+    ID_BUTTON_UP            "Move the injector plunger up\nInjector Plunger Up"
+    ID_BUTTON_DOWN          "Move the injector plunger down\nInjector Plunger Down"
+    ID_BUTTON_RIGHT         "Open injector valve to the right\nInjector Valve Right"
+    ID_BUTTON_LEFT          "Open injector valve to the left\nInjector Valve Left"
+    ID_VIEW_INJECTBAR       "Show or hide the injector toolbar\nToggle Injector Bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_VIEW_IDLEMESSAGE    "View or export data."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\SK.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+#include "SRGRes.rc"
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

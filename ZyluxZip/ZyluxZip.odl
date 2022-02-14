@@ -1,0 +1,43 @@
+// ZyluxZip.odl : type library source for ZyluxZip.exe
+import "oaidl.idl";
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (ZyluxZip.tlb).
+
+[ uuid(628301D5-2363-42CB-8F10-74DE3C431DA7), version(1.0) ]
+library ZyluxZip
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CZyluxZipDoc
+	
+	[ uuid(AB3992C6-C2A0-4617-902B-B9A7007A0728) ]
+	dispinterface IZyluxZip
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CZyluxZipDlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CZyluxZipDlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CZyluxZipDoc
+	
+	[ uuid(B0FBB7DF-CC6F-4D82-89DB-9008D0AE6BED) ]
+	coclass ZyluxZip
+	{
+		[default] dispinterface IZyluxZip;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

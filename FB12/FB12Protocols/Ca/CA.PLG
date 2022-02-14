@@ -1,0 +1,84 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: CA - Win32 Debug Simulate--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"..\..\..\obj\debugS\CA/CA.res" /d "_DEBUG" /d "_AFXDLL" "C:\Code\Zylux\FB12\FB12Protocols\Ca\CA.rc"" 
+Creating temporary file "C:\DOCUME~2\maynard\LOCALS~1\Temp\RSP8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\Protocol" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /D "FB12_SIMULATE" /FR"..\..\..\obj\debugS\CA/" /Fp"..\..\..\obj\debugS\CA/CA.pch" /Yu"stdafx.h" /Fo"..\..\..\obj\debugS\CA/" /Fd"..\..\..\obj\debugS\CA/" /FD /c 
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\CA.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\CAAdvancedDlg.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\CADoc.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\CAEditDlg.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\CAGridWnd.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\CAKineticsView.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\CAPPS.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\CAView.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\ExcelOptions.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\MainFrm.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\SampGridWnd.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\Sample.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~2\maynard\LOCALS~1\Temp\RSP8.tmp" 
+Creating temporary file "C:\DOCUME~2\maynard\LOCALS~1\Temp\RSP9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /I "..\Protocol" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /D "FB12_SIMULATE" /FR"..\..\..\obj\debugS\CA/" /Fp"..\..\..\obj\debugS\CA/CA.pch" /Yc"stdafx.h" /Fo"..\..\..\obj\debugS\CA/" /Fd"..\..\..\obj\debugS\CA/" /FD /c 
+"C:\Code\Zylux\FB12\FB12Protocols\Ca\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~2\maynard\LOCALS~1\Temp\RSP9.tmp" 
+Creating temporary file "C:\DOCUME~2\maynard\LOCALS~1\Temp\RSPA.tmp" with contents
+[
+ProtocolDS.lib Winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\..\..\debugS/CA.pdb" /debug /machine:I386 /out:"..\..\..\debugS/CA.exe" /pdbtype:sept /libpath:"..\Protocol\lib" 
+\Code\Zylux\obj\debugS\CA\CA.obj
+\Code\Zylux\obj\debugS\CA\CAAdvancedDlg.obj
+\Code\Zylux\obj\debugS\CA\CADoc.obj
+\Code\Zylux\obj\debugS\CA\CAEditDlg.obj
+\Code\Zylux\obj\debugS\CA\CAGridWnd.obj
+\Code\Zylux\obj\debugS\CA\CAKineticsView.obj
+\Code\Zylux\obj\debugS\CA\CAPPS.obj
+\Code\Zylux\obj\debugS\CA\CAView.obj
+\Code\Zylux\obj\debugS\CA\ExcelOptions.obj
+\Code\Zylux\obj\debugS\CA\MainFrm.obj
+\Code\Zylux\obj\debugS\CA\SampGridWnd.obj
+\Code\Zylux\obj\debugS\CA\Sample.obj
+\Code\Zylux\obj\debugS\CA\StdAfx.obj
+\Code\Zylux\obj\debugS\CA\CA.res
+]
+Creating command line "link.exe @C:\DOCUME~2\maynard\LOCALS~1\Temp\RSPA.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+C:\Code\Zylux\FB12\FB12Protocols\Ca\CA.rc(769) : fatal error RC1015: cannot open include file 'SRGRes.rc'.
+Error executing rc.exe.
+Creating temporary file "C:\DOCUME~2\maynard\LOCALS~1\Temp\RSPB.tmp" with contents
+[
+/nologo /o"..\..\..\debugS/CA.bsc" 
+\Code\Zylux\obj\debugS\CA\StdAfx.sbr
+\Code\Zylux\obj\debugS\CA\CA.sbr
+\Code\Zylux\obj\debugS\CA\CAAdvancedDlg.sbr
+\Code\Zylux\obj\debugS\CA\CADoc.sbr
+\Code\Zylux\obj\debugS\CA\CAEditDlg.sbr
+\Code\Zylux\obj\debugS\CA\CAGridWnd.sbr
+\Code\Zylux\obj\debugS\CA\CAKineticsView.sbr
+\Code\Zylux\obj\debugS\CA\CAPPS.sbr
+\Code\Zylux\obj\debugS\CA\CAView.sbr
+\Code\Zylux\obj\debugS\CA\ExcelOptions.sbr
+\Code\Zylux\obj\debugS\CA\MainFrm.sbr
+\Code\Zylux\obj\debugS\CA\SampGridWnd.sbr
+\Code\Zylux\obj\debugS\CA\Sample.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~2\maynard\LOCALS~1\Temp\RSPB.tmp"
+Creating browse info file...
+BSCMAKE: error BK1506 : cannot open file '\Code\Zylux\obj\debugS\CA\StdAfx.sbr': No such file or directory
+Error executing bscmake.exe.
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CA.exe - 2 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

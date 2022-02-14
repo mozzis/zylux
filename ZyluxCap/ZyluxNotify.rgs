@@ -1,0 +1,11 @@
+HKCR
+{
+  NoRemove Interface
+    {
+	ForceRemove {32FD1680-348C-41cf-BE53-B0148CAEC0BA} = s 'IZyluxNotify'
+	  {
+	  'TypeLib' = s '{F0CB6024-7876-11D2-88A4-00104BF194E2}'
+	  'ProxyStubClsid32' = s '{00020424-0000-0000-C000-000000000046}'
+	  }
+	}
+}

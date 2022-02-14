@@ -1,0 +1,43 @@
+// TestATL.odl : type library source for TestATL.exe
+import "oaidl.idl";
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (TestATL.tlb).
+
+[ uuid(25AFA4F6-2E62-480C-B2DE-B292BAB42B8E), version(1.0) ]
+library TestATL
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CTestATLDoc
+	
+	[ uuid(DC7B1C4A-0C45-480D-A53E-96F7AFED7404) ]
+	dispinterface ITestATL
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CTestATLDlgAutoProxy)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CTestATLDlgAutoProxy)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CTestATLDoc
+	
+	[ uuid(664565D7-CE94-4369-A177-6AC3784DD52E) ]
+	coclass TestATL
+	{
+		[default] dispinterface ITestATL;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

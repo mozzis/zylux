@@ -1,0 +1,10 @@
+Microsoft (R) Help Compiler
+HCRTF 4.01.0951
+Copyright (c) Microsoft Corp 1990 - 1995. All rights reserved.
+protocol manager.hpj
+    HC1002: Note: 
+	Using existing phrase table: Protocol Manager.ph.
+    HC4002: Warning: 
+	The RTF file D:\DevStudio\MyProjects\Fb12\Protocol Manager\hlp\.\afxdlg.rtf is corrupted at offset 297.
+    HC4005: Warning: 
+	The Protocol Manager.HLP help file has not been created.

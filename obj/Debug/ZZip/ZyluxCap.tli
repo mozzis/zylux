@@ -1,0 +1,110 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8447.0 (34aeac61).
+//
+// c:\code\zylux\obj\debug\zzip\ZyluxCap.tli
+//
+// Wrapper implementations for Win32 type library ..\Debug\ZyluxCap.exe
+// compiler-generated file created 04/26/02 at 12:24:16 - DO NOT EDIT!
+
+#pragma once
+
+//
+// dispinterface IZyluxCap wrapper method implementations
+//
+
+inline SCODE IZyluxCap::Advise ( IUnknown * pNotifier ) {
+    SCODE _result;
+    _com_dispatch_method(this, 0x7, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x000d", pNotifier);
+    return _result;
+}
+
+inline SCODE IZyluxCap::UnAdvise ( IUnknown * pNotifier ) {
+    SCODE _result;
+    _com_dispatch_method(this, 0x8, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
+        L"\x000d", pNotifier);
+    return _result;
+}
+
+inline HRESULT IZyluxCap::SetWindowPos ( long left, long top, long right, long bottom ) {
+    return _com_dispatch_method(this, 0x9, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x0003\x0003", left, top, right, bottom);
+}
+
+inline HRESULT IZyluxCap::CenterOnRect ( long left, long top, long right, long bottom ) {
+    return _com_dispatch_method(this, 0xa, DISPATCH_METHOD, VT_EMPTY, NULL, 
+        L"\x0003\x0003\x0003\x0003", left, top, right, bottom);
+}
+
+inline HRESULT IZyluxCap::Quit ( ) {
+    return _com_dispatch_method(this, 0xb, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+}
+
+inline long IZyluxCap::GetBaud ( ) {
+    long _result;
+    _com_dispatch_propget(this, 0x1, VT_I4, (void*)&_result);
+    return _result;
+}
+
+inline void IZyluxCap::PutBaud ( long _val ) {
+    _com_dispatch_propput(this, 0x1, VT_I4, _val);
+}
+
+inline short IZyluxCap::GetPort ( ) {
+    short _result;
+    _com_dispatch_propget(this, 0x2, VT_I2, (void*)&_result);
+    return _result;
+}
+
+inline void IZyluxCap::PutPort ( short _val ) {
+    _com_dispatch_propput(this, 0x2, VT_I2, _val);
+}
+
+inline short IZyluxCap::GetFlowCtrl ( ) {
+    short _result;
+    _com_dispatch_propget(this, 0x3, VT_I2, (void*)&_result);
+    return _result;
+}
+
+inline void IZyluxCap::PutFlowCtrl ( short _val ) {
+    _com_dispatch_propput(this, 0x3, VT_I2, _val);
+}
+
+inline short IZyluxCap::GetDBits ( ) {
+    short _result;
+    _com_dispatch_propget(this, 0x4, VT_I2, (void*)&_result);
+    return _result;
+}
+
+inline void IZyluxCap::PutDBits ( short _val ) {
+    _com_dispatch_propput(this, 0x4, VT_I2, _val);
+}
+
+inline short IZyluxCap::GetParity ( ) {
+    short _result;
+    _com_dispatch_propget(this, 0x5, VT_I2, (void*)&_result);
+    return _result;
+}
+
+inline void IZyluxCap::PutParity ( short _val ) {
+    _com_dispatch_propput(this, 0x5, VT_I2, _val);
+}
+
+inline short IZyluxCap::GetStopBits ( ) {
+    short _result;
+    _com_dispatch_propget(this, 0x6, VT_I2, (void*)&_result);
+    return _result;
+}
+
+inline void IZyluxCap::PutStopBits ( short _val ) {
+    _com_dispatch_propput(this, 0x6, VT_I2, _val);
+}
+
+//
+// interface IZyluxNotify wrapper method implementations
+//
+
+inline HRESULT IZyluxNotify::Notify ( long lCategory, long lReason, IUnknown * pUnk ) {
+    HRESULT _hr = raw_Notify(lCategory, lReason, pUnk);
+    if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
+    return _hr;
+}

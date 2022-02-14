@@ -1,0 +1,395 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Protocol - Win32 Debug Simulate--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~2\maynard\LOCALS~1\Temp\RSP2B4.tmp" with contents
+[
+/nologo /MDd /W3 /GX /Z7 /Od /I "resources" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /D "FB12_SIMULATE" /Fp"..\..\obj\DebugS\PCOL/Protocol.pch" /YX /Fo"..\..\obj\DebugS\PCOL/" /Fd"..\..\obj\DebugS\PCOL/" /FD /c 
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\Actwatch.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\Excel95.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\Excel97.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\FB12Device.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\General.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\GPPS.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\GraphFrm.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\GridFrm.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\GridView.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\Kinetics.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\PPS.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtCmdLineInfo.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\Protocol.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolDlg.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolDoc.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolFrame.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\Replicate.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\SaveAsDlg.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\SCSerialNumber.cpp"
+"C:\Code\Zylux\FB12\FB12Protocols\Protocol\Options.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~2\maynard\LOCALS~1\Temp\RSP2B4.tmp" 
+Creating temporary file "C:\DOCUME~2\maynard\LOCALS~1\Temp\RSP2B5.tmp" with contents
+[
+/nologo /out:"ProtocolDS.lib" 
+\Code\Zylux\FB12\obj\DebugS\PCOL\Actwatch.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\Excel95.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\Excel97.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\FB12Device.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\General.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\GPPS.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\GraphFrm.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\GridFrm.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\GridView.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\Kinetics.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\KineticsView.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\PPS.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\ProtCmdLineInfo.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\Protocol.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\ProtocolDlg.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\ProtocolDoc.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\ProtocolFrame.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\ProtocolGridWnd.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\Replicate.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\SaveAsDlg.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\SCSerialNumber.obj
+\Code\Zylux\FB12\obj\DebugS\PCOL\Options.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~2\maynard\LOCALS~1\Temp\RSP2B5.tmp"
+<h3>Output Window</h3>
+Compiling...
+Actwatch.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+Excel95.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(14) : error C2504: 'CGXGridWnd' : base class undefined
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(18) : error C2143: syntax error : missing ';' before 'public'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(32) : error C2061: syntax error : identifier 'ROWCOL'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(46) : error C2061: syntax error : identifier 'ROWCOL'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(47) : error C2061: syntax error : identifier 'ROWCOL'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(53) : error C2146: syntax error : missing ';' before identifier 'm_ctxt_cell_row'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(53) : error C2501: 'ROWCOL' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(53) : error C2501: 'm_ctxt_cell_row' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(56) : error C2146: syntax error : missing ';' before identifier 'm_ctxt_cell_col'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(56) : error C2501: 'ROWCOL' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(56) : error C2501: 'm_ctxt_cell_col' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\Excel95.cpp(71) : error C2660: 'SetFocus' : function does not take 0 parameters
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\Excel95.cpp(87) : fatal error C1903: unable to recover from previous error(s); stopping compilation
+Excel97.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(14) : error C2504: 'CGXGridWnd' : base class undefined
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(18) : error C2143: syntax error : missing ';' before 'public'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(32) : error C2061: syntax error : identifier 'ROWCOL'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(46) : error C2061: syntax error : identifier 'ROWCOL'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(47) : error C2061: syntax error : identifier 'ROWCOL'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(53) : error C2146: syntax error : missing ';' before identifier 'm_ctxt_cell_row'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(53) : error C2501: 'ROWCOL' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(53) : error C2501: 'm_ctxt_cell_row' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(56) : error C2146: syntax error : missing ';' before identifier 'm_ctxt_cell_col'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(56) : error C2501: 'ROWCOL' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(56) : error C2501: 'm_ctxt_cell_col' : missing storage-class or type specifiers
+c:\code\zylux\fb12\obj\debugs\pcol\mso97.tlh(861) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\code\zylux\fb12\obj\debugs\pcol\vbeext1.tlh(194) : error C2146: syntax error : missing ';' before identifier 'CommandBars'
+c:\code\zylux\fb12\obj\debugs\pcol\vbeext1.tlh(194) : error C2501: '_CommandBarsPtr' : missing storage-class or type specifiers
+c:\code\zylux\fb12\obj\debugs\pcol\vbeext1.tlh(194) : error C2208: 'struct CommandBars' : no members defined using this type
+c:\code\zylux\fb12\obj\debugs\pcol\vbeext1.tlh(213) : error C2146: syntax error : missing ';' before identifier 'GetCommandBars'
+c:\code\zylux\fb12\obj\debugs\pcol\vbeext1.tlh(213) : error C2501: '_CommandBarsPtr' : missing storage-class or type specifiers
+c:\code\zylux\fb12\obj\debugs\pcol\vbeext1.tli(32) : error C2143: syntax error : missing ';' before 'tag::id'
+c:\code\zylux\fb12\obj\debugs\pcol\vbeext1.tli(32) : error C2433: '_CommandBarsPtr' : 'inline' not permitted on data declarations
+c:\code\zylux\fb12\obj\debugs\pcol\vbeext1.tli(32) : error C2501: '_CommandBarsPtr' : missing storage-class or type specifiers
+c:\code\zylux\fb12\obj\debugs\pcol\vbeext1.tli(32) : fatal error C1004: unexpected end of file found
+FB12Device.cpp
+General.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+GPPS.cpp
+GraphFrm.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+GridFrm.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+GridView.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+Kinetics.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+KineticsView.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(47) : error C2065: 'm_graph' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(47) : error C2228: left of '.DrawComponentList' must have class/struct/union type
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(104) : error C2228: left of '.SetHeader' must have class/struct/union type
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(105) : error C2228: left of '.SetHeader' must have class/struct/union type
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(110) : error C2228: left of '.GetGroup' must have class/struct/union type
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(110) : error C2227: left of '->GetIndex' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(110) : error C2227: left of '->SetNull' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(111) : error C2228: left of '.GetGroup' must have class/struct/union type
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(111) : error C2227: left of '->GetIndex' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(111) : error C2227: left of '->SetNull' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(113) : error C2228: left of '.GetGroup' must have class/struct/union type
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(113) : error C2227: left of '->GetIndex' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(113) : error C2227: left of '->SetAnnotation' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(116) : error C2065: 'SRGraphStyle' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(116) : error C2146: syntax error : missing ';' before identifier 'style'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(116) : error C2065: 'style' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(117) : error C2228: left of '.SetObjectStyle' must have class/struct/union type
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(117) : error C2065: 'CX_OBJECT_LINE' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(118) : error C2228: left of '.SetGlobalStyle' must have class/struct/union type
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(123) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(123) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(124) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(146) : error C2065: 'm_compound_display' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(146) : error C2061: syntax error : identifier 'SRGCompoundDisplay'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(147) : error C2227: left of '->SetMeasurement' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(147) : error C2065: 'CX_PERCENT' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(148) : error C2227: left of '->SetSizeDefaults' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(149) : error C2227: left of '->SetRect' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(150) : error C2227: left of '->GetStyle' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(150) : error C2227: left of '->SetTierXLabels' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(152) : error C2065: 'SRGDecimalScale' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(152) : error C2065: 'pDC' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(152) : error C2061: syntax error : identifier 'SRGDecimalScale'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(153) : error C2227: left of '->SetYLabelA' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(154) : error C2227: left of '->SetResolution' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(156) : error C2065: 'SRGIndexScale' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(156) : error C2065: 'pIS' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(156) : error C2061: syntax error : identifier 'SRGIndexScale'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(157) : error C2227: left of '->SetXLabelA' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(158) : error C2227: left of '->SetResolution' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(159) : error C2227: left of '->SetNodeAdjust' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(160) : error C2227: left of '->GetStyle' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(160) : error C2227: left of '->SetAutoOrientation' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(161) : error C2227: left of '->SetOrientation' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(162) : error C2227: left of '->SetLocationPoint' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(162) : error C2653: 'SRGraphLabel' : is not a class or namespace name
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(162) : error C2065: 'TopCenter' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(163) : error C2227: left of '->SetCheckOverlaps' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(165) : error C2065: 'SRGTickMarks' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(165) : error C2065: 'pT' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(165) : error C2061: syntax error : identifier 'SRGTickMarks'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(166) : error C2227: left of '->SetXTickMarksA' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(168) : error C2061: syntax error : identifier 'SRGTickMarks'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(169) : error C2227: left of '->SetMinorTickRatio' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(170) : error C2227: left of '->SetYTickMarksA' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(172) : error C2065: 'SRGGridLines' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(172) : error C2065: 'pG' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(172) : error C2061: syntax error : identifier 'SRGGridLines'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(173) : error C2227: left of '->SetXGridLinesA' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(175) : error C2061: syntax error : identifier 'SRGGridLines'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(176) : error C2227: left of '->SetYGridLinesA' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(178) : error C2065: 'SRGraphDisplay' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(178) : error C2065: 'pD' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(178) : error C2061: syntax error : identifier 'SRGraphDisplay'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(179) : error C2227: left of '->GetStyle' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(179) : error C2227: left of '->SetGraphStyle' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(179) : error C2065: 'CX_GRAPH_LINE' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(180) : error C2227: left of '->GetStyle' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(180) : error C2227: left of '->SetAxisStyle' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(180) : error C2065: 'CX_AXIS_CLASSIC' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(181) : error C2227: left of '->GetStyle' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(181) : error C2227: left of '->SetDeferDraw' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(182) : error C2227: left of '->SetYGraphDisplayA' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(184) : error C2065: 'SRGraphLabel' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(184) : error C2065: 'pLab' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(184) : error C2061: syntax error : identifier 'SRGraphLabel'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(185) : error C2227: left of '->SetParent' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(186) : error C2227: left of '->SetAnnotation' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(187) : error C2227: left of '->GetYAxisA' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(187) : error C2227: left of '->RegisterTitle' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(194) : error C2228: left of '.AddComponent' must have class/struct/union type
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(196) : error C2065: 'SRGraphLegend' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(196) : error C2065: 'pL' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(196) : error C2061: syntax error : identifier 'SRGraphLegend'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(197) : error C2227: left of '->SetMeasurement' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(198) : error C2227: left of '->SetSizeDefaults' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(199) : error C2227: left of '->SetRect' must point to class/struct/union
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(201) : error C2228: left of '.AddComponent' must have class/struct/union type
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(204) : error C2143: syntax error : missing ';' before '}'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(204) : error C2143: syntax error : missing ';' before '}'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(204) : error C2143: syntax error : missing ';' before '}'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.cpp(204) : fatal error C1003: error count exceeds 100; stopping compilation
+PPS.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+ProtCmdLineInfo.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+Protocol.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+ProtocolDlg.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+ProtocolDoc.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+ProtocolFrame.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+ProtocolGridWnd.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(14) : error C2504: 'CGXGridWnd' : base class undefined
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(18) : error C2143: syntax error : missing ';' before 'public'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(32) : error C2061: syntax error : identifier 'ROWCOL'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(46) : error C2061: syntax error : identifier 'ROWCOL'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(47) : error C2061: syntax error : identifier 'ROWCOL'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(53) : error C2146: syntax error : missing ';' before identifier 'm_ctxt_cell_row'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(53) : error C2501: 'ROWCOL' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(53) : error C2501: 'm_ctxt_cell_row' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(56) : error C2146: syntax error : missing ';' before identifier 'm_ctxt_cell_col'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(56) : error C2501: 'ROWCOL' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.h(56) : error C2501: 'm_ctxt_cell_col' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(14) : error C2059: syntax error : 'constant'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(28) : error C2653: 'CGXGridWnd' : is not a class or namespace name
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(45) : error C2065: 'ROWCOL' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(45) : error C2146: syntax error : missing ')' before identifier 'row'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(45) : error C2182: 'HiliteCell' : illegal use of type 'void'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(45) : error C2350: 'CProtocolGridWnd::HiliteCell' is not a static member
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(45) : error C2059: syntax error : ')'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(46) : error C2143: syntax error : missing ';' before '{'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(46) : error C2447: missing function header (old-style formal list?)
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(68) : error C2146: syntax error : missing ')' before identifier 'row'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(68) : error C2182: 'UnhiliteCell' : illegal use of type 'void'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(68) : error C2350: 'CProtocolGridWnd::UnhiliteCell' is not a static member
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(68) : error C2059: syntax error : ')'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(69) : error C2143: syntax error : missing ';' before '{'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(69) : error C2447: missing function header (old-style formal list?)
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(85) : error C2065: 'CanCopy' : undeclared identifier
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(140) : error C2146: syntax error : missing ')' before identifier 'nHitRow'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(140) : error C2350: 'CProtocolGridWnd::OnRButtonHitRowCol' is not a static member
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(142) : error C2059: syntax error : ')'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(143) : error C2143: syntax error : missing ';' before '{'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(143) : error C2447: missing function header (old-style formal list?)
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(238) : error C2660: 'SetFocus' : function does not take 0 parameters
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\ProtocolGridWnd.cpp(243) : error C2660: 'SetFocus' : function does not take 0 parameters
+Replicate.cpp
+SaveAsDlg.cpp
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'SRGCompoundDisplay' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(42) : error C2501: 'm_compound_display' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2146: syntax error : missing ';' before identifier 'm_graph'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(44) : error C2501: 'm_graph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2143: syntax error : missing ';' before '*'
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2433: 'SRGraph' : 'virtual' not permitted on data declarations
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'SRGraph' : missing storage-class or type specifiers
+C:\Code\Zylux\FB12\FB12Protocols\Protocol\KineticsView.h(68) : error C2501: 'GetGraph' : missing storage-class or type specifiers
+SCSerialNumber.cpp
+Options.cpp
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+ProtocolDS.lib - 299 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

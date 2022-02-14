@@ -1,0 +1,55 @@
+--------------------Configuration: SK - Win32 Debug Simulate--------------------
+Begining build with project "S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sk\SK.DSP", at root.
+Active configuration is Win32 (x86) Application (based on Win32 (x86) Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\Protocol" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /D "FB12_SIMULATE" /Fp"T:\tmp\FB12\SK\DebugS/SK.pch" /Yu"stdafx.h" /Fo"T:\tmp\FB12\SK\DebugS/" /Fd"T:\tmp\FB12\SK\DebugS/" /FD /c "
+			"OLE Type Library Maker" with flags "/nologo /D "_DEBUG" /mktyplib203 /o NUL /win32 "
+			"Win32 Resource Compiler" with flags "/l 0x409 /fo"T:\tmp\FB12\SK\DebugS/SK.res" /d "_DEBUG" /d "_AFXDLL" "
+			"Browser Database Maker" with flags "/nologo /o"DebugS/SK.bsc" "
+			"COFF Linker for 80x86" with flags "Winmm.lib ProtocolDS.lib /nologo /subsystem:windows /incremental:yes /pdb:"DebugS/SK.pdb" /debug /machine:I386 /out:"DebugS/SK.exe" /pdbtype:sept /libpath:"..\Protocol\lib" "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\WINDOWS\TEMP\RSP80A5.TMP" with contents </nologo /MDd /W3 /Gm /GX /Zi /Od /I "..\Protocol" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_GXDLL" /D "_OBJCHART_DLL" /D "FB12_SIMULATE" /Fp"T:\tmp\FB12\SK\DebugS/SK.pch" /Yu"stdafx.h" /Fo"T:\tmp\FB12\SK\DebugS/" /Fd"T:\tmp\FB12\SK\DebugS/" /FD /c 
+"S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sk\ChartOptView.cpp"
+"S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sk\ChartView.cpp"
+"S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sk\SK.cpp"
+"S:\Projects\Zylux\Fb12\C++\Development\FB12Protocols\Sk\SKGraphFrame.cpp"
+>
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP80A5.TMP" 
+Creating temp file "C:\WINDOWS\TEMP\RSP80A6.TMP" with contents <Winmm.lib ProtocolDS.lib /nologo /subsystem:windows /incremental:yes /pdb:"DebugS/SK.pdb" /debug /machine:I386 /out:"DebugS/SK.exe" /pdbtype:sept /libpath:"..\Protocol\lib" 
+"T:\tmp\FB12\SK\DebugS\ChartOptView.obj"
+"T:\tmp\FB12\SK\DebugS\ChartView.obj"
+"T:\tmp\FB12\SK\DebugS\ExcelOptions.obj"
+"T:\tmp\FB12\SK\DebugS\MainFrm.obj"
+"T:\tmp\FB12\SK\DebugS\RepInfoList.obj"
+"T:\tmp\FB12\SK\DebugS\Sample.obj"
+"T:\tmp\FB12\SK\DebugS\SK.obj"
+"T:\tmp\FB12\SK\DebugS\SKAdvanced.obj"
+"T:\tmp\FB12\SK\DebugS\SKDoc.obj"
+"T:\tmp\FB12\SK\DebugS\SKEditDlg.obj"
+"T:\tmp\FB12\SK\DebugS\SKGraphFrame.obj"
+"T:\tmp\FB12\SK\DebugS\SKGridWnd.obj"
+"T:\tmp\FB12\SK\DebugS\SKHint.obj"
+"T:\tmp\FB12\SK\DebugS\SKPPS.obj"
+"T:\tmp\FB12\SK\DebugS\SKView.obj"
+"T:\tmp\FB12\SK\DebugS\StdAfx.obj"
+"T:\tmp\FB12\SK\DebugS\SK.res">
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP80A6.TMP" 
+Compiling...
+ChartView.cpp
+Generating Code...
+Compiling...
+ChartOptView.cpp
+Generating Code...
+Compiling...
+SK.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+SKGraphFrame.cpp
+Linking...
+
+
+
+SK.exe - 0 error(s), 0 warning(s)

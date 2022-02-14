@@ -1,0 +1,24 @@
+HKCR
+{
+	ZyluxZip.SerialInfo.1 = s 'SerialInfo Class'
+	{
+		CLSID = s '{2E301FB1-61D2-4C8F-8423-2BE21D16B44F}'
+	}
+	ZyluxZip.SerialInfo = s 'SerialInfo Class'
+	{
+		CLSID = s '{2E301FB1-61D2-4C8F-8423-2BE21D16B44F}'
+		CurVer = s 'ZyluxZip.SerialInfo.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {2E301FB1-61D2-4C8F-8423-2BE21D16B44F} = s 'SerialInfo Class'
+		{
+			ProgID = s 'ZyluxZip.SerialInfo.1'
+			VersionIndependentProgID = s 'ZyluxZip.SerialInfo'
+			ForceRemove 'Programmable'
+			LocalServer32 = s '%MODULE%'
+			val AppID = s '{C8CA6D9E-64C1-4FEC-BA19-AD3828C4B524}'
+			'TypeLib' = s '{628301D5-2363-42CB-8F10-74DE3C431DA7}'
+		}
+	}
+}

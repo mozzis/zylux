@@ -1,0 +1,45 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "TestATL"=.\TestATL.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ZyluxCap"=..\ZyluxCap\ZyluxCap.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+    begin source code control
+    "$/ZyluxCap/2.0", 
+    ..\zyluxcap
+    end source code control
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+
